@@ -1,0 +1,382 @@
+/*2019‑12‑23 ‒ 23H02 ‒ Rule pro Apostrophe‑2 W.P. Theme */
+
+/* Body */
+body,
+body.page-template-default {
+  overflow-x: auto;
+}
+
+#page.hfeed,
+#page.site {
+  max-width: 85%;
+}
+
+#primary.content-area {
+  float: right;
+  width: 73.2%;
+}
+
+#secondary.widget-area {
+  float: left;
+  width: 23%;
+  padding-right: 0;
+  margin-right: 3.78788%;
+}
+
+/* Header */
+h1.site-title {
+  margin-top: 0;
+  font-size: 28px;
+  word-wrap: unset;
+  line-height: 40px;
+}
+
+h2.site-description {
+  font-style: oblique;
+  font-size: 14px;
+}
+
+.custom-logo {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+  max-height: 458px;
+}
+
+img.custom-logo {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+  max-height: 458px;
+}
+
+/* Menu Link */
+#site-navigation.main-navigation ul ul li {
+  white-space: normal;
+  min-width: 20em;
+}
+
+#site-navigation.main-navigation {
+  width: 80%;
+}
+
+ul.children {
+  width: 24em;
+}
+
+li.page_item_has_children li {
+  width: 24em;
+}
+
+ul.children li.page_item {
+  width: 24em;
+}
+
+/* Aside */
+
+.widget_pages > ul,
+.widget_pages > ul > li.page_item > ul.children,
+.widget_pages > ul > li.page_item > ul.children > li.page_item > ul.children {
+  max-width: 100%;
+}
+
+.widget_pages > ul > li.page_item > ul.children > li.page_item {
+  max-width: 97%;
+  word-break: break-word;
+}
+
+.widget_pages
+  > ul
+  > li.page_item
+  > ul.children
+  > li.page_item
+  > ul.children
+  > li.page_item {
+  max-width: 97%;
+  /* background-color: red; */
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+#widget_pages ul li.page_item {
+  max-width: 12em;
+}
+
+/* Main */
+summary {
+  display: revert;
+}
+
+details summary::marker {
+  color: #9e9e9e;
+}
+
+/* Article */
+.entry-thumbnail {
+  height: 2.12em;
+}
+.attachment-post-thumbnail {
+  height: 2.12em;
+}
+
+/* Code */
+code {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 0.1em 0.3em;
+  border-radius: 0.4em;
+}
+
+/* Div */
+.div-white,
+.div-black {
+  padding: 0 0.3em 0 0.3em;
+}
+
+/* BlockQuote */
+
+blockquote,
+blockquote.wp-block-quote {
+  background-color: hsla(0, 0%, 0%, 0.02);
+  font-weight: initial;
+}
+
+/* Verse’s */
+pre.wp-block-verse {
+  background-color: #e0f7fa;
+  color: #616161;
+  padding: 0 1em 0 2em;
+}
+
+/* Lists */
+li {
+  margin: revert;
+}
+
+/* YouTube */
+figure.wp-block-embed-youtube {
+  width: 723px;
+}
+
+/* Table */
+blockquote.wp-block-quote table {
+  font-style: initial;
+}
+
+table {
+  border: 1px double rgba(64, 64, 64, 0.2);
+  background-color: #ffffff;
+}
+
+table th,
+table.nine-column-nowrap th,
+table.ten-column-nowrap th {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  background-color: hsl(0, 0, 96);
+  border: 1px solid rgba(64, 64, 64, 0.2);
+  color: #000000;
+  background-clip: padding-box;
+  // font-size: 200%;
+}
+
+th.binary,
+th.arrow,
+th.evlrane,
+th.orbitian,
+th.roots,
+th.transduction,
+th.tenafations,
+td.polymultivariants {
+  border: 1px solid #ddd !important;
+  background-color: #f5f5f5 !important;
+  // background-color: red !important; /* Tester */
+}
+th.arrow,
+th.binary {
+  min-width: 5em;
+}
+
+th.orbitian,
+th.roots {
+  min-width: 8em;
+}
+
+th.evlrane {
+  min-width: 14em;
+}
+
+table td,
+table td[style],
+table.ten-column-nowrap td {
+  // background-color: #ffffff;
+  border: 1px solid rgba(64, 64, 64, 0.2);
+  text-align: left;
+  background-clip: padding-box;
+}
+
+table th {
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Table inside BlockQuote */
+blockquote table.ten-column-nowrap,
+blockquote table.ten-column-nowrap tbody tr th {
+  background-color: rgb(250, 250, 250) !important;
+  border: 0 !important;
+}
+
+/* Table outside BlockQuote */
+table.ten-column-nowrap,
+table.ten-column-nowrap tbody tr th {
+  background-color: #ffffff !important;
+  line-height: initial !important;
+  border: 0 !important;
+}
+
+/*
+table.ten-column-nowrap tbody tr th < br {
+  line-height: initial !important;
+  background-color: red !important;
+}
+*/
+
+.fifty-percent {
+  width: 50%;
+} /* nine-column */
+.nine-column-nowrap td:nth-child(3),
+.nine-column-nowrap td:nth-child(5),
+.nine-column-nowrap td:nth-child(9) {
+  white-space: nowrap;
+}
+.nine-column-nowrap td:nth-child(1),
+.nine-column-nowrap td:nth-child(2),
+.nine-column-nowrap td:nth-child(3) {
+  font-weight: bold;
+}
+.nine-column-nowrap td:nth-child(5) {
+  /* font-family: Andalus, Aldanaus, serif; font-size: x-large; */
+  font-weight: bold;
+}
+.nine-column-nowrap td:nth-child(5) {
+  text-align: right;
+}
+.nine-column-nowrap td:nth-child(7) {
+  text-transform: uppercase;
+}
+.nine-column-nowrap td:nth-child(8) {
+  font-style: italic;
+}
+.two-column th:nth-child(n + 2),
+.four-column th:nth-child(n + 3),
+.six-column th:nth-child(n + 4),
+.eight-column th:nth-child(n + 5),
+.ten-column th:nth-child(n + 6),
+.twelve-column th:nth-child(n + 7),
+.fourteen-column th:nth-child(n + 8),
+.sixteen-column th:nth-child(n + 9),
+.eighteen-column th:nth-child(n + 10),
+.two-column td:nth-child(-n + 1),
+.four-column td:nth-child(-n + 2),
+.six-column td:nth-child(-n + 3),
+.eight-column td:nth-child(-n + 4),
+.ten-column td:nth-child(-n + 5),
+.twelve-column td:nth-child(-n + 6),
+.fourteen-column td:nth-child(-n + 7),
+.sixteen-column td:nth-child(-n + 8),
+.eighteen-column td:nth-child(-n + 9) {
+  background-color: #000000;
+  color: #ffffff;
+}
+.two-column th:nth-child(-n + 1),
+.four-column th:nth-child(-n + 2),
+.six-column th:nth-child(-n + 3),
+.eight-column th:nth-child(-n + 4),
+.ten-column th:nth-child(-n + 5),
+.twelve-column th:nth-child(-n + 6),
+.fourteen-column th:nth-child(-n + 7),
+.sixteen-column th:nth-child(-n + 8),
+.eighteen-column th:nth-child(-n + 9),
+.two-column td:nth-child(n + 2),
+.four-column td:nth-child(n + 3),
+.six-column td:nth-child(n + 4),
+.eight-column td:nth-child(n + 5),
+.ten-column td:nth-child(n + 6),
+.twelve-column td:nth-child(n + 7),
+.fourteen-column td:nth-child(n + 8),
+.sixteen-column td:nth-child(n + 9),
+.eighteen-column td:nth-child(n + 10) {
+  background-color: #ffffff;
+  color: #000000;
+}
+.two-column th:nth-child(-n + 1),
+.four-column th:nth-child(-n + 2),
+.two-column td:nth-child(-n + 1),
+.four-column td:nth-child(-n + 2) {
+  text-align: right;
+}
+.two-column th:nth-child(n + 2),
+.four-column th:nth-child(n + 3),
+.two-column td:nth-child(n + 2),
+.four-column td:nth-child(n + 3) {
+  text-align: left;
+}
+.taocodex_title_genative {
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+}
+.taocodex_title_negative {
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+}
+.taocodex_negative {
+  background-color: #000000;
+  color: #ffffff;
+}
+.taocodex_genative {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+table.ten-column-nowrap td {
+    filter: invert(0);
+}
+
+table.ten-column-nowrap td:nth-child(3) {
+    background-color: #fffde7;
+}
+
+table.ten-column-nowrap td:nth-child(8) {
+    background-color: #ffebee;
+}
+
+table.ten-column-nowrap td:nth-child(3)[style*="background-color:white"] {
+    background-color: #fffde7 !important;
+}
+
+table.ten-column-nowrap td:nth-child(8)[style*="background-color:white"] {
+    background-color: #ffebee !important;
+}
+
+table.ten-column-nowrap td:nth-child(3)[style*="background-color:black"] {
+    // background-color: #fffde7 !important;
+}
+
+table.ten-column-nowrap td:nth-child(8)[style*="background-color:black"] {
+    background-color: #ffebee !important;
+}
+
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}

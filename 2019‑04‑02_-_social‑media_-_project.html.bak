@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+ * Created by PhpStorm. * User: Nemzag aka Gazmen Arifi (Shkypi, 1979-09-30).
+ * Date: 2019-04-02 * Time: 11:42
+--><html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Meta Information's -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="Personnal website">
+    <meta name="subject" content="Web Dewelopmenth">
+    <meta name="keywords" content="">
+    <meta name="author" content="Gazmen Arifi / Газмен Арифи">
+    <meta name="birthday" content="1979-09-30" scheme="YYYY-MM-DD">
+    <meta name="reply-to" content="???????@???????.com">
+    <meta name="copyright" content="Gazmen Arifi / Газмен Арифи">
+    <meta name="date" content="2019-04-02" scheme="YYYY-MM-DD">
+    <meta name="hour" content="11:42" scheme="HH:mm">
+    <meta name="generator" content="PhpStorm 2018.??.??">
+    <!-- Title -->
+    <title>Title</title>
+    <!-- Link’s favicon -->
+    <link rel="icon" href="../assets/logo/TAOTRJ%C3%83Z%C3%8B_BV.png">
+    <!-- Link’s third party stylesheet  -->
+    <link rel="stylesheet" href="../assets/css/prism/prism.css">
+    <link rel="stylesheet" href="../assets/css/tocbot/tocbot.css">
+    <link rel="stylesheet" href="../assets/css/prettify/prettify.css">
+    <!-- Syntaxic coloration on result -->
+    <!-- <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../assets/PrameVorgs/semantic-ui-css-master/semantic.min.css">
+    <!-- Link’s TableDatas stylesheet -->
+    <link rel="stylesheet" href="../assets/js/data_tables/DataTables-1.10.18/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../assets/js/data_tables/DataTables-1.10.18/css/dataTables.semanticui.min.css">
+    <!-- Link’s personal stylesheet -->
+    <!-- <link rel="stylesheet" href="../assets/css/Nemzag/base.css"> -->
+    <link rel="stylesheet" href="../assets/css/Nemzag/ueb.css">
+    <!-- <link rel="stylesheet" href="../assets/css/Nemzag/debug.css"> -->
+    <!-- Link’s Google Font's -->
+    <!-- Page own particular styles -->
+    <style>
+        body {
+            font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            color: rgba(0, 0, 0, .87);
+        }
+    </style>
+    <!-- jQuery -->
+    <script src="../assets/js/jquery/jquery.js"></script>
+  </head>
+  <body id="body" class="js-toc-content">
+    <header>
+      <h1 id="title-h1-??"></h1>
+    </header>
+    <main id="main" class="ui container">
+      <article id="article">
+        <section id="#section-table-of-contents">
+          <fieldset> <legend>
+              <h2 id="title-h2-table-of-contents"> <a href="?#title-h2-table-of-contents">Table
+                  de's matière's :</a> </h2>
+            </legend>
+            <div id="js-toc" class="js-toc"></div>
+          </fieldset>
+        </section>
+        <!-- BEGIN PRINCIPAL CONTENT -->
+        <section id="section-principal">
+          <section>
+            <pre>
+
+
+
+
+
+2017-11-11 :
+Projet de profil global internet biographie et centre d'intérêt et capacité. Brief description, CV, hardware by time. Long description.
+
+2017-11-14 :
+Page importateur mur Twitter C.S.V. vers mur FaceBook.
+
+2017-11-19 :
+Page liste termes Qoppa.
+Source's &amp; référence's :
+Why Q is always followed by a U ? :
+•	https://books.google.be/books?id=BfY47TgrbiMC&amp;pg=PT247&amp;lpg=PT247&amp;dq=words+using+koppa+greek&amp;source=bl&amp;ots=RjdabxAQFC&amp;sig=cXAdNxOqBJH-SNb4D_xJv2jGTAo&amp;hl=fr&amp;sa=X&amp;ved=0ahUKEwiP0cqWscvXAhUGvBoKHf3tBkY4ChDoAQgRMAM#v=onepage&amp;q=words%20using%20koppa%20greek&amp;f=false
+•	http://www.greekalphabeta.com/learn-about-qoppa-984-90.html
+•	https://en.m.wikipedia.org/wiki/Koppa_(letter)
+•	https://archive.is/20120628161421/http://www.tlg.uci.edu/~opoudjis/unicode/nonattic.html
+
+2017-12-30 : Projet Disque Diamant (nano‑carbone) Laser.
+
+Stockage des projets finaliser de une personne décédée.
+
+2018-04-23 :
+Keyboard Unifio Clarifio.
+•	Japanese Hiragana &amp; Katakana use the 5 lines (vertical) to write...
+•	The 16‑column writing system, are there, to allow, perfect display of Unicode hexadecimal range and in the lux LED keys version they will be displayed.
+•	Scrolling tool on the side to scroll Unicode Range when needed.
+
+201?-??-?? :
+Pont pro trottoir afin d'éviter de attendre et perde son temp's.
+
+2018-10-07 - 10H30
+Archive temporelle ??? Je ne sais plus de quoi il s’agit !!!
+
+2018-10-21 - 16H45 :
+Project Uni‑Buy‑Profile , you buy software somewhere, you buy games elsewhere, but why to not have only one profile to be able to play that game, or download software on any major platform ? Steam, Gog, Uplay, Microsoft Store…
+
+2018-12-07 : Project Uni‑Layer
+Translation of programming code in Albanian &amp; French… Automatic translation.
+
+2018-12-15
+•	Projet de fusion des langues English, Espagnol, Italien, French, Shkyp, Grec &amp; Qrêgue, Arbi, Syriaque, Araméen &amp; Hébreu, Slave, Dutch…
+
+2018-12-09 - 17H00
+Projet page vote, dans chaque navigateur, possibilité de voter pro le contenu de la page pro améliorer le référencement et la qualité des moteurs recherche… Quoi de plus inutile que des lires page inutile au contenu sans intérêt. Un vote y remédierait.
+
+2018-12-09 :
+Le site des inventions et des inventeurs… Qui ou, quommênth, pourquoi, pour chaque chose, brevet, patent… Qui më a influencé ou inspirer.
+
+2019 janvier zéro 8 11h 50 
+Copier Lorsqu'on fait un dictact il faudrait qu'on arrière-plan Le la parole que l'on dit soit enregistre format audio Synchroniser avec chaque mot ce que si je clique sur avec moi je mets play Il répétera est-ce que des fois il ne me reconnaît pas bien les caractères de combien pas d'enregistrement du son On sait par revoir ce qu'on a dit donc ça que j'aimerais bien faire Ah Microsoft pour Word et aussi Google Google keep 
+2019‑01‑08 21H25 : UNISQLARCHIVE :
+ Moi ce que je me ce que j'aimerai ajouter À mon projet une SQL archives C'est une chose très utile pour l'humanitaire Savoir Le monde chez lui à problème en des fardes Contenant assez facture c'est citycat d'achat ces documents reçus important Jérôme il faut les garder assez longtemps parce que 16 av besoin de la garantie ou prouver un achat où je ne sais quoi Comment connaître votre histoire Cela prend beaucoup d'espace Donc moi personnellement voilà j'ai environ une dizaine de Farde même une vingtaine avant container mes anciens cours de ma jeunesse j'avais une farde Mutualité une femme médecine Une farde justice 
+Phare de dessin Alors une femme avec des factures et documents administratifs que j'ai recevez chaque année trier par année bon ça fait 20 ans que je fais ça vous imaginez bien que non j'ai une trentaine de farte Donc est-ce que j'ai Fait Par manque d'espace  Journée je t'aime beaucoup Qu'est-ce que j'avais écrit dans ma jeunesse à l'école toute mon tu me secondaire j'ai Tout jeter 
+Ça m'a fait un peu de peine D'un autre côté C'était nécessaire 
+J'ai conservé les cours du supérieur Pour les relire Okay besoin Est-ce que je me suis dit bon voilà si j'avais Le unis SQL archives Je pourrais par exemple Centralisez toutes les administrations toute la société sur cette base de données plutôt que d'avoir des tas de papier Quelles sont envoyer en format Analogique matériel Vous obtiendrez en format Numérique Virtuel
+C'est un gain De papierDonc d'argent De nature sans protège les arbres qui nous prod qu'il procure de oxigen Quand est-ce que l'on doit respecter Ensuite stega d'espacé nord N'arrive plus à stocker 30 phare dans une bibliothèque y'a des gens qui vivent dans un copain studio je vous prie de croire que ces gens-là ont pas la possibilité Spatiale De ranger leurs affaires Comment faire alors qu'on en a besoin de ses archives Ça va que mon projet rentre en action Donc voilà Je pense que ça serait parfait.
+
+2019‑01‑14
+Création de un site de vente basé au moyen oreint en ligne proposant des produits de la bas (vête‑mênth) au monde entier.
+
+</pre> </section>
+          <section>
+            <fieldset>
+              </fieldset>
+             </section>
+              <footer id="footer">
+                <!-- Prism -->
+                <script src="../assets/js/prism/prism.js"></script>
+                <!-- Prettify -->
+                <script src="../assets/js/prettify/prettify.js"></script>
+                <!-- TocBot-->
+                <script src="../assets/js/tocbot/tocbot.js"></script>
+                <script src="../assets/js/tocbot/tocbot.init.js"></script>
+                <!-- Semantic UI -->
+                <script src="../assets/PrameVorgs/semantic-ui-css-master/semantic.min.js"></script>
+                <!-- DataTables -->
+                <script src="../assets/js/data_tables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+                <script src="../assets/js/data_tables/DataTables-1.10.18/js/dataTables.semanticui.min.js"></script>
+                <!-- DataTables Personal -->
+                <script src="../assets/js/Nemzag/Nemzag_-_data_tables_-_2019-01-02.js"></script>
+                <!-- Personal -->
+                <script src="../assets/js/Nemzag/functions/Nemzag_-_smoothscroll_titles_t.o.c._-_2018-10-01.js"></script> </footer>
+              <table id="table" style="text-align: center" class="table-de-gazmen order-column hover stripe cell-border"
+
+                data-order="[[ 2, &quot;desc&quot; ]]" data-page-length="25" data-filter="true"
+
+                data-info="false" data-paging="true">
+                <!-- data-page-length="-1" : pro all results… -->
+                <!-- END PRINCIPAL CONTENT -->
+              </table>
+            </fieldset>
+          </section>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

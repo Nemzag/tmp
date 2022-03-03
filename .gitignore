@@ -1,0 +1,37 @@
+# https://www.atlassian.com/fr/git/tutorials/saving-changes/gitignore
+# https://www.pluralsight.com/guides/how-to-use-gitignore-file
+
+###> jetbrain phpstorm ###
+/.idea/
+**/.idea/
+# ** : Search all ".idea", partout.
+###< phpstorm ###
+
+###> microsoft visual studio ###
+/.vs/
+**/.vs/
+# ** : Search all ".idea", partout.
+###< phpstorm ###
+
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###

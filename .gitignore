@@ -10,6 +10,8 @@
 ###> microsoft visual studio ###
 /.vs/
 **/.vs/
+/.vscode/
+**/.vscode/
 # ** : Search all ".idea", partout.
 ###< phpstorm ###
 

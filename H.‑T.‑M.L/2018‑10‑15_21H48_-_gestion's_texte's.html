@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<!--
+	* Created by DreamWeaver.	* User: Nemzag aka Gazmen Arifi.	* Date: 2018-10-15	* Time: 21:48 (UTC+1 : Central European Standard Time)	* Recompilation of old file's, written since 2007.-->
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Meta Information's -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Personal website">
+    <meta name="subject" content="Web Dewelopmenth">
+    <meta name="keywords" content="">
+    <meta name="author" content="Gazmen Arifi / Газмен Арифи">
+    <meta name="birthday" content="1979-09-30" scheme="YYYY-MM-DD">
+    <meta name="reply-to" content="???????@???????.com">
+    <meta name="copyright" content="Gazmen Arifi / Газмен Арифи">
+    <meta name="date" content="2018‑10‑15" scheme="YYYY‑MM‑DD">
+    <meta name="hour" content="21:48" scheme="HH:mm">
+    <meta name="generator" content="Visual Studio Code">
+    <!-- Title -->
+    <title>Gestion’s, Emplette’s &amp; Ordre / Priorité d'Achat's.</title>
+    <!-- Link’s favicon -->
+    <link rel="icon" href="../../../public/assets/logo/TAOTRJ%C3%83Z%C3%8B_BV.png">
+    <!-- Link’s third-party stylesheet  -->
+    <link rel="stylesheet" href="../../../public/assets/css/prism/prism.css">
+    <link rel="stylesheet" href="../../../public/assets/css/tocbot/tocbot.css">
+    <link rel="stylesheet" href="../../../public/assets/css/prettify/prettify.css">
+    <!-- Syntaxic coloration on result -->
+    <!--<link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../../../public/assets/PrameVorgs/semantic-ui-css-master/semantic.min.css">
+    <!-- Link’s TableDatas stylesheet -->
+    <link rel="stylesheet" href="../../../public/assets/js/data_tables/DataTables-1.10.18/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../../public/assets/js/data_tables/DataTables-1.10.18/css/dataTables.semanticui.min.css">
+    <!-- Link’s personal stylesheet -->
+    <!--<link rel="stylesheet" href="../assets/css/Nemzag/base.css">-->
+    <link rel="stylesheet" href="../../../public/assets/css/Nemzag/ueb.css">
+    <!--<link rel="stylesheet" href="../assets/css/Nemzag/debug.css">-->
+    <!--<link rel="stylesheet" href="../assets/css/Nemzag/mangzedi.wordpress.css">-->
+    <!-- Page own particular styles -->
+    <style>
+		body {
+			font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		}
+
+		table {
+			margin: 0;
+			vertical-align: baseline;
+		}
+
+		th {
+			white-space: nowrap;
+		}
+
+		.gazmen-gestion-table th:nth-child(1),
+		th:nth-child(3) {
+			text-align: center;
+		}
+
+		.gazmen-gestion-table td:nth-child(1),
+		.gazmen-gestion-table td:nth-child(4) {
+			width: 1px;
+			text-align: right;
+			white-space: nowrap;
+		}
+
+		.gazmen-gestion-table td:nth-child(2) {
+			width: 1px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+
+		td {
+			text-align: justify;
+		}
+
+		/* Begin DataTables Top & Bottom class */
+
+		.table-datas-top,
+		.table-datas-bottom {
+			display: flex;
+			align-items: stretch;
+			padding-bottom: 0.5em;
+		}
+
+		.table-datas-top > div:nth-child(1),
+		.table-datas-bottom > div:nth-child(1) {
+			width: 25%;
+		}
+
+		.table-datas-top > div:nth-child(2) {
+			padding-top: 0;
+		}
+
+		.table-datas-top > div:nth-child(2),
+		.table-datas-bottom > div:nth-child(2) {
+			width: 50%;
+			text-align: center;
+			align-self: first;
+		}
+
+		.table-datas-top > div:nth-child(3) {
+			width: 25%;
+		}
+
+		/* End DataTables Top & Bottom class */
+
+		/* Begin of eigth-column-table */
+
+		table.dataTable,
+		table.dataTable th,
+		table.dataTable td {
+			box-sizing: border-box;
+		}
+
+		.eigth-column-table th {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.eigth-column-table td:nth-child(1)::after {
+			content: "%";
+		}
+
+		.eigth-column-table td:nth-child(7)::after {
+			content: "€";
+		}
+
+		.eigth-column-table th:nth-child(2),
+		.eigth-column-table td:nth-child(2) {
+			width: 400px;
+			max-width: 400px;
+		}
+
+		.eigth-column-table th:nth-child(5),
+		.eigth-column-table td:nth-child(5),
+		.eigth-column-table th:nth-child(8),
+		.eigth-column-table td:nth-child(8) {
+			max-width: 6em;
+		}
+
+		.eigth-column-table td:nth-child(1),
+		.eigth-column-table td:nth-child(2),
+		.eigth-column-table td:nth-child(3),
+		.eigth-column-table td:nth-child(4),
+		.eigth-column-table td:nth-child(6),
+		.eigth-column-table td:nth-child(7) {
+			width: 1px;
+			text-align: justify;
+		}
+
+		.eigth-column-table td:nth-child(1),
+		.eigth-column-table td:nth-child(7) {
+			text-align: right;
+		}
+
+		.eigth-column-table td:nth-child(7) {
+			white-space: nowrap;
+		}
+		/* End of eigth-column-table */
+
+		.style3 {
+			color: #FFFFFF;
+			font-weight: bold;
+		}
+
+		table.table-text {
+			width: 100%;
+		}
+
+		table.table-text th::after {
+			content: " 🔃";
+		}
+
+		table.table-text th:nth-child(1),
+		table.table-text td:nth-child(1) {
+			max-width: 200px;
+			white-space: normal;
+			font-weight: bold;
+		}
+
+		table.table-text td:nth-child(1) {
+			text-align: justify;
+		}
+
+		table.table-text th:nth-child(2),
+		table.table-text td:nth-child(2) {
+			width: 100%;
+			white-space: pre-wrap;
+		}
+
+		table.table-text th:nth-child(2) pre,
+		table.table-text td:nth-child(2) pre {
+			white-space: pre-wrap;
+		}
+
+		table.table-text th:nth-child(3) {
+			max-width: 160px;
+		}
+
+		table.table-text td:nth-child(3) {
+			max-width: 160px;
+			font-style: italic;
+			text-align: justify;
+		}
+
+		table.table-text th:nth-child(4),
+		table.table-text td:nth-child(4) {
+			white-space: nowrap;
+			max-width: 160px;
+		}
+	</style>
+    <!-- jQuery -->
+    <script src="../../../public/assets/js/jquery/jquery.js"></script>
+  </head>
+  <body id="body" class="js-toc-content">
+    <header>
+      <h1 id="title-h1-gestions">Gestion's éco‑nomi‑que et du temp.</h1>
+    </header>
+    <main id="main" class="ui container">
+      <article id="article">
+        <section id="#section-table-of-contents">
+          <fieldset> <legend>
+              <h2 id="title-h2-table-of-contents"><a href="?#title-h2-table-of-contents">Table des matière's</a> </h2>
+            </legend>
+            <div id="js-toc" class="js-toc"></div>
+          </fieldset>
+        </section>
+        <!-- CONTENUE PRINCIPALE -->
+        <section id="section-principal">
+          <!-- BEGIN SECTION TEXT HISTORY REGISTER -->
+          <section>
+            <fieldset> <legend>
+                <h2 id="title-h2-text-history-register-archive"> <a href="?#title-h2-table-of-contents">2018-10-06 07:33 (UTC+1)<br>
+                    Text history register archive</a> </h2>
+              </legend>
+              <table id="table-text" class="table-text">
+                <tbody>
+                  <tr>
+                    <!--When a header is clicked, run the sortTable function, with a parameter,
+				0 pro sorting by names, 1 pro sorting by country: --> <th onclick="sortTable(0)">Title :</th>
+                    <th onclick="sortTable(1)">Content :</th>
+                    <th onclick="sortTable(2)">Type :</th>
+                    <th onclick="sortTable(3)">Date :</th>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>Crêgue Mutation.txt</td>
+                    <td>
+				  <pre>ΣΣΣΣ to ΣΣ (dans function GreekDuploRemove)
+
+QOPPA {2018-04-09 23:46} :
+-------
+Qrystal
+Qʰrusos
+Qʰriʃθos
+ϘΑΝΩΝ #QANUNË #قانون
+Épique : ܐܶܦܝܩܳܘܣ
+‑QUS / ‑QOS / ‑QAS ‑QOM ⇒ ‑QON
+http://www.qenshrin.com/syriac/dic/words.php?searchbox=%DC%A9%DC%98%DC%A3&amp;option=1
+KATƩOLIQUSË ܩܰܬܘܠܝܩܳܘܣ
+TOQUAR TOSK !
+RÊGS REX dans section Lettre KSI / Ξ.
+قخبة خبأ خبث dans section lettre CHI / Χ
+كرم خرم حرم خمر
+Et tout Geg Albanais qui suivent cette réforme, sans même la contester mériterais de mourir ! (Section Albanais reforme)
+
+ὈΡΧΟΗ ὈΡΕΧ ὨΡΥΓΕΙ
+
+GEG   ==&gt; TOSK
+KA    ==&gt; NGA
+KADAL ==&gt; NGADAL
+
+Create Function GreekMacedonianTransCodation (TH -&gt; D, THANOS -&gt; DANOS, vice‑versa)
+
+Α / Ε :
+--------
+ΑΙ (Doric, Epic) pro ΕΙ : si.
+ΑΙΠΕΡ (Doric) pro ΕΙΠΕΡ.
+ΑΙΤΕ (Doric) pro ΕΙΤΕ.
+ΑΝΤΕΩ (Ionic) pro ΑΝΤΑΩ.
+ΑΠΟΤΑΜΝΩ (Ionic, Epic) pro ΑΠΟΤΕΜΝΩ.
+ΑΡΕΟΜΑΙ (Ionic) pro ΑΡΑΟΜΑΙ.
+
+
+Α / Η : (retirer de la fonction Ionic A to H sauf pour la fin des mots...)
+--------
+ΑΘΑΝΑ (Doric) pro ΑΘΗΝΑ.
+ΑΘΗΝΗ (Ionic) pro ΑΘΗΝΑ.
+ΑΘΟΣ (Doric) pro ΗΘΟΣ.
+ΑΙΓΛΑΣ (Doric) pro ΑΙΓΛΗΕΙΣ.
+ΑΙΧΜΑ (Doric) pro ΑΙΧΜΗ.
+ΑΛΑΘΗΣ (Doric) pro ΑΛΗΘΗΣ.
+ΑΛΑΤΑΣ (Doric) pro ΑΛΗΤΗΣ.
+ΑΛΕΜΑΤΟΣ (Doric) pro ΗΛΕΜΑΤΟΣ.
+ΑΛΙΘΙΟΣ (Doric) pro ΗΛΙΘΙΟΣ.
+Α‑ΠΕΙΡΗΤΟΣ (Ionic) pro Α‑ΠΕΙΡΑΤΟΣ.
+ΑΠΕΙΡΟΣ (Doric) pro ΗΠΕΙΡΟΣ.
+Α‑ΠΛΗΤΟΣ (Ionic) pro Α‑ΠΛΑΤΟΣ.
+ΑΠΟ‑ΔΡΗΣΙΣ (Ionic) pro ΑΠΟ‑ΔΡΑΣΙΣ.
+ΑΠΡΗΚΤΟΣ (Ionic) pro ΑΠΡΑΚΤΟΣ.
+ΑΡΗ (Ionic) pro ΑΡΑ.
+ΑΡΧΑΓΟΣ (Doric) pro ΑΡΧΗΓΟΣ.
+ΑΣ (Doric) pro ΗΣ.
+ΑΣΙΗΤΙΣ (Ionic) pro ΑΣΙΑΤΙΣ.
+ΑΣΥΧΑ (Doric) pro ΗΣΥΧΑ.
+ΑΣΥΧΟΣ (Doric) pro ΗΣΥΧΟΣ.
+ΑΤΙΤΑΣ (Doric) pro ΑΤΙΤΗΣ.
+ΑΤΡΙΟΝ (Doric) pro ΗΤΡΙΟΝ.
+ΑΧΥΡΜΙΗ (Ionic) pro ΑΧΥΡΜΙΑ.
+ΑΧΩ (Doric) pro ΗΧΩ.
+ΓΑΙΗ (Ionic) pro ΓΑΙΑ.
+ΓΑΛΑΝΑ (Doric) pro ΓΑΛΗΝΗ.
+
+
+Α / Ο :
+-------
+ΑΡΡΩΔΕΩ (Ionic) pro ΟΡΡΩΔΕΩ.
+ΑΡΡΩΔΙΗ (Ionic) pro ΟΡΡΩΔΙΑ.
+
+Ε / Η :
+-------
+ΑΡΗΙΟΣ (Epic, Ionic) pro ΑΡΕΙΟΣ.
+ΑΡΗΙ‑ΦΑΤΟΣ (Epic, Ionic) pro ΑΡΕΙ‑ΦΑΤΟΣ.
+ΑΡΙΣΤΗΙΟΝ (Ionic) pro ΑΡΙΣΤΕΙΟΝ.
+ΑΡΧΗΙΟΝ (Ionic) pro ΑΡΧΕΙΟΝ.
+
+
+Ε / Ω :
+-------
+ΑΠΟ‑ΠΛΩΩ (Epic, Ionic) pro ΑΠΟ‑ΠΛΕΩ.
+
+
+ΕΙΑ / ΙΗ :
+--------
+ΑΣΦΑΛΙΗ (Ionic) ΑΣΦΑΛΕΙΑ.
+ΑΤΕΛΙΗ (Ionic) ΑΤΕΛΕΙΑ.
+ΑΤΡΕΚΙΗ (Ionic) ΑΤΡΕΚΕΙΑ.
+ΒΑΣΙΛΗΙΗ (Ionic) ΒΑΣΙΛΕΙΑ.
+ΔΕΚΕΛΕΗ (Ionic) ΔΕΚΕΛΕΙΑ.
+
+
+ΟΥ / Ο :
+--------
+ΒΟΛΛΑ (Aeolic) pro ΒΟΥΛΗ.
+
+ΑΥ / Ω :
+--------
+ΘΩΜΑ (Ionic.) pro ΘΑΥΜΑ.
+ΤΡΩΜΑ (Ionic) pro ΤΡΑΥΜΑ.
+ΩΛΑΞ (Doric) pro ΑΥΛΑΞ.
+
+
+ΕΩ / Ω :
+--------
+ΔΑΨΙΛΕΩΣ (Poetic) pro ΔΑΨΙΛΩΣ.
+
+
+ΟΥ / Ω :
+--------
+ΒΩΛΑ (Doric) pro ΒΟΥΛΗ.
+ΓΩΝ (Ionic) pro ΓΟΥΝ.
+ΩΡΑΝΟΣ pro ΟΥΡΑΝΟΣ.
+ΜΩΣΑ pro ΜΟΥΣΑ.
+ΚΩΡΟΣ pro ΚΟΥΡΟΣ.
+ΛΙΠΩΣΑ pro ΛΙΠΟΥΣΑ.
+
+ΟΗ / Ω :
+--------
+ΒΩΘΕΩ (Ionic) pro &nbsp;ΒΟΗΘΕΩ.
+
+
+Υ / Ω :
+-------
+ΑΡΧ‑ΙΕΡΕΩΣ (Ionic) pro ΑΡΧ‑ΙΕΡΕΥΣ.
+
+
+ΑΝΑ / ΑΜ / ΑΝ :
+---------------
+ΑΜ‑ΜΕΝΩ (Poetic) pro ΑΝΑ‑ΜΕΝΩ.
+ΑΜ‑ΠΙΠΤΕΙ (Poetic) pro ΑΝΑ‑ΠΙΠΤΩ.
+ΑΜ‑ΠΗΔΗΣΕ (Epic) pro ΑΝΑ‑ΠΗΔΑΩ.
+ΑΜ‑ΠΝΟΗ (Poetic) pro ΑΝΑ‑ΠΝΟΗ.
+ΑΜ‑ΦΕΥΓΩ (Poetic) pro ΑΝΑ‑ΦΕΥΓΩ.
+ΑΝ‑ΔΕΧΟΜΑΙ (Poetic) pro ΑΝΑ‑ΔΕΧΟΜΑΙ.
+ΑΝ‑ΔΗΜΑ (Poetic) pro ΑΝΑ‑ΔΗΜΑ.
+ΑΝ‑ΘΕΜΑ (Poetic) pro ΑΝΑ‑ΘΕΜΑ.
+ΑΝ‑ΣΧΕΤΟΣ (Poetic) pro ΑΝΑ‑ΣΧΕΤΟΣ.
+ΑΝ‑ΤΕΛΛΩ (Poetic) pro ΑΝΑ‑ΤΕΛΛΩ.
+ΑΝ‑ΤΡΕΠΩ (Poetic) pro ΑΝΑ‑ΤΡΕΠΩ.
+
+
+CRASE :
+-------
+
+ΑΠΟ‑ΚΛΑΩ (Attic) pro ΑΠΟ‑ΚΛΑΙΩ. {A/AI}
+
+ΑΙΚΙΑ (Attic) pro ΑΕΙΚΙΗ (Ionic). {I/EI}
+
+ΑΛΗΘΕΩΣ (Ionic) pro ΑΛΗΘΩ͂Σ. {EÔ/Ô}
+ΑΠΕΡΕΩ (Ionic) pro ΑΠΕΡΩ͂. {EÔ/Ô}
+ΑΣΦΑΛΕΩΣ (Ionic) pro ΑΣΦΑΛΩ͂Σ. {EÔ/Ô}
+ΑΤΡΕΚΕΩΣ (Ionic) pro ΑΤΡΕΚΩ͂Σ. {EÔ/Ô}
+ΑΦΕΙΔΕΩΣ (Ionic) pro ΑΦΕΙΔΩ͂Σ. {EÔ/Ô}
+
+ΑΠΟ‑ΔΕΙΡΩ (Ionic, Poetic) pro ΑΠΟ‑ΔΕΡΩ. {EI/E}
+
+ΑΠΕΡΓΩ (Ionic) pro ΑΠΕΙΡΓΩ. {E/EI}
+ΑΠΟ‑ΔΕΞΙΣ (Ionic, Poetic) pro ΑΠΟ‑ΔΕΙΞΙΣ. {E/EI}
+ΑΠΟ‑ΕΡΓΩ (Epic) pro ΑΠΟ‑ΕΙΡΓΩ. {E/EI}
+ΔΕΞΩ (Ionic.) pro ΔΕΙΞΩ.
+
+
+DUPLO :
+-------
+ΑΜΜΕΣ (Epic) pro ΗΜΕΙΣ.
+
+
+Γ /  :
+--------
+ΓΔΟΥΠΕΩ (Epic) pro ΔΟΥΠΕΩ.
+ΓΙΝΟΜΑΙ (Ionic, Recent) pro ΓΙΓΝΟΜΑΙ.
+ΓΙΝΩΣΚΩ (Ionic, Recent) pro ΓΙΓΝΩΣΚΩ.
+
+
+Π / Φ : (changer la fonction Aeolic pour que le F devienne un P)
+-------
+ΑΜΠΙ (Aeolic) pro ΑΜΦΙ.
+ΑΠ‑ΑΙΡΕΦΩ (Ionic) pro ΑΦ‑ΑΙΡΕΩ.
+ΑΠ‑ΑΠΤΩ (Ionic) pro ΑΦ‑ΑΠΤΩ.
+ΑΠ‑ΕΛΚΩ (Ionic) pro ΑΦ‑ΕΛΚΩ.
+ΑΠ‑ΕΨΩ (Ionic) pro ΑΦ‑ΕΨΩ.
+ΑΠΗΛΙΞ (Ionic) pro ΑΦ‑ΗΛΙΞ.
+ΑΠΙΗΜΙ (Ionic) pro ΑΦΙΗΜΙ.
+ΑΠ‑ΙΣΤΗΜΙ (Ionic) pro ΑΦ‑ΙΣΤΗΜΙ.
+ΑΠΟ‑ΑΙΡΕΟΜΑΙ (Epic) pro ΑΦ‑ΑΙΡΕΟΜΑΙ.
+ΑΠ‑ΟΔΟΣ (Ionic) pro ΑΦ‑ΟΔΟΣ.
+ΑΠ‑ΟΡΕΩ (Ionic) pro ΑΦ‑ΟΡΕΩ.
+ΑΣΦΑΡΑΓΟΣ (Attic) pro ΑΣΠΑΡΑΓΟΣ.
+
+
+‑ΙΑ → ‑ΟΣϒΝΑ :
+--------------
+Α‑ΠΙΣΤΟΣΥΝΑ (Doric) pro Α‑ΠΙΣΤΙΑ.
+
+
+Κ / Χ :
+-------
+ΑΝΑ‑ΔΕΚΟΜΑΙ (Ionic) pro ΑΝΑ‑ΔΕΧΟΜΑΙ.
+ΑΠΟ‑ΔΕΚΟΜΑΙ (Ionic) pro ΑΠΟ‑ΔΕΧΟΜΑΙ.
+
+
+Λ / ΛΛ :
+--------
+ΑΧΙΛΕΙΟΣ (Poetic) pro ΑΧΙΛΛΕΙΟΣ.
+
+
+Π / ΠΤ :
+--------
+Α‑ΠΤΟΛΕΜΟΣ (Poetic) pro Α‑ΠΟΛΕΜΟΣ.
+
+
+Σ / Ξ :
+-------
+Α‑ΞΥΜ‑ΜΕΤΡΟΣ (Ancient Attic) pro Α‑ΣΥΜ‑ΜΕΤΡΟΣ.
+Α‑ΞΥΝ‑ΗΜΩΝ (Ancient Attic) pro Α‑ΣΥΝ‑ΗΜΩΝ.
+Α‑ΞΥΝ‑ΘΕΤΟΣ (Ancient Attic) pro Α‑ΣΥΝ‑ΘΕΤΟΣ.
+
+
+Σ / ΣΣ :
+--------
+ΑΠΟΣΣΕΥΩ (Poetic) pro ΑΠΟΣΕΥΩ.
+
+
+ΣΣ / ΤΤ :
+---------
+ΤΑΡΑΤΤΩ (Attic) pro ΤΑΡΑΣΣΩ.
+ΑΝΤ‑ΕΠΙ‑ΤΑΤΤΩ (Attic) pro ΑΝΤ‑ΕΠΙ‑ΤΑΣΣΩ.
+ΑΝΤΙ‑ΦΥΛΑΤΤΩ (Attic) pro ΑΝΤΙ‑ΦΥΛΑΣΣΩ.
+
+
+Τ / Θ :
+-------
+ΑΝΤΙ‑ΚΑΤΗΜΑΙ (Ionic) pro ΑΝΤΙ‑ΚΑΘΗΜΑΙ.
+ΑΝΤΙ‑ΚΑΤΙΖΟΜΑΙ (Ionic) pro ΑΝΤΙ‑ΚΑΘΙΖΟΜΑΙ.
+ΑΝΤΙ‑ΚΑΤΙΣΤΗΜΙ (Ionic) pro ΑΝΤΙ‑ΚΑΘΙΣΤΗΜΙ.
+ΑΝΤΙ‑ΣΤΗΜΙ (Ionic) pro ΑΝΘΙ‑ΣΤΗΜΙ.
+ΑΝΤ‑ΥΠΟ‑ΚΡΙΝΟΜΑΙ (Ionic) pro ΑΝΘ‑ΥΠΟ‑ΚΡΙΝΟΜΑΙ.
+ΑΝΤ‑ΥΠΟ‑ΥΡΓΕΩ (Ionic) pro ΑΝΘ‑ΥΠΟ‑ΥΡΓΕΩ.
+ΑΥΤΙΣ(Ionic, Poetic) pro ΑΥΘΙΣ. {back‑ward, inverse, back again.}
+ΑΥΤ‑ΗΜΕΡΟΝ (Ionic) pro ΑΥΘ‑ΗΜΕΡΟΝ.
+ΑΥΤΙ‑ΓΕΝΗΣ (Ionic) pro ΑΥΘΙ‑ΓΕΝΗΣ.</pre>
+							</td>
+                    <td>Language's</td>
+                    <td>2018-04-13 18:36</td>
+                  </tr>
+                  <tr>
+                    <td>2018‑09‑23_-_TAG.txt</td>
+                    <td>
+				  <pre>#Farsi #Paris #Persia #Tehran #Iran #Tirana #Prishtina #Prishtinë #Kosova #Kosovë #Shkyp #Shkypni #Shkypri #Shqyp #Shqypni #Shqip #Shqipni #Shqipëni #Shqipëri #Shkupi #Ashkali #Rom #Roma #Rama #India #Indra #Rodin #Mandarin #Evrôpa #Evrôpe #Êvrôfa #Êvrôfë #حۋرغف #America (Tosk.) #Amenica (Geg.) #USA #World #Universe #Bota #Toka #Dunjã
+
+</pre>
+								<details>
+									<summary>
+										<strong>Tag's :</strong>
+									</summary>
+									<pre>#Vrang #ܘܪܢܓ #Vrangë
+#Vrans #Vrãnsë
+#Qrang #Qrãngë #ܩܪܐܢܓ
+#Qrans #Qrãnsë
+#Shrang #Shrãngë #شرأنج
+#Shrans #Shrãnsë #شرأنس
+#Shagi #Shagië
+#Shangth #Shangthë #ܫܢܓ
+#Prjn‑kêps
+#Prang #ܦܪܢܓ #Prãngë
+#Prans
+#French
+#France #ܦܪܢܣ
+#Farsi #فرس
+#Paris
+#Persia #ܦܪܣ
+#Prjs‑tjna
+#Prish‑tina #פרש #ܦܪܫܐ
+#Prishtina #Prishtinë
+#Tehran
+#Iran
+#Tirana #Tiranë #طيران #Tirôna #طيرغنى #Tirônë #טירון
+#Turan #ܬܘܪܟܝܐ #Tyrkan #تركية #Tyrqan #טורקיה #Orkhon #وركاء #Uruk #𒌷𒀕 #ܐܘܪܟ #Unug #𒌷𒀔 #ܐܪܟ #Arx #أرخ #Erech #أرخ #Arg #ارج #Ôrug #عرج #Oregʰ #ܥܪܓ #ὈΡΧΟΗ #ארך #ὈΡΕΧ #ὨΡΥΓΕΙ #ܥܝܪܐܩ #Oraq #عراق #Iraq #עיראק #Irak
+#ΤΥΡΑΝΝΟΣ #Taruna #तरुण #תא‑ארון #box #qybe #קביה #ϘΥΒΑ #qybern #govern #cell #chest #ark #תאוס
+#ΤϜΡΑΝΝΟΜ #طۋرع
+#ΟϜΡΑΝΟΣ
+#ΗΛΕϜϘΟΣ #حلهۋق
+#ϘΡΗΝΗ #ϘΡΑΝΑ #ϘΡΑΝΝΑ #Qrônië
+#ΛΥϘΗ #ألق #Luqs #Lux #Jl‑lumë
+#ϘΑΝΩΝ #Qanunë #قانون #Rêg‑ula
+#ϘΟΙΡΑΝΟΣ #Coeran #Coêvr #قعحۋر #Qear #Cor #Qarzja
+#ϘΟΡΩΝΑ #Qyrônë #Qrôunë #Crown
+#QARUNA #क़रुणा #Qrban #قربان
+#ϘΑΡΑΝΟΣ #CARAN
+#القرأن
+#ϘΡΑΙΝΩ #Craen
+#ϘΡΗΓΥΟΣ #قرحگو #Qrêgu #Cregu #ΡΗΓΥΣ #ΡΗΓΣ #ΡΗΞ #Regs #Rex
+#Geg #ΓΕΓΕΙΟΣ
+#Gegnisht
+#Gegonist #ΓΕΓΩΝΙΣΤΗΣ
+#Gegërisht
+#Albania
+#Alnabia
+#Alvania
+#Arbi #ארב
+#Arban #ארבן
+#Arvan #ܐܪܒܢ
+#Avran #ܐܘܪ
+#Arnaud #ارناود
+#Arbanasi #اربن
+#Arvanites
+#Arber
+#Arbër
+#Burrë #بور
+#Arbëresh
+#Arben
+#Bunë #בונה
+#Bunnë
+#Orbitian #ערבית
+#Shkyptar
+#ΩΚΥΠΤΕΡΟΜ
+#ϷΚΟΠΟΜ
+#ΚΟΠΘΙϘΟΜ
+#ⲔⲨⲠⲦⲀⲒⲞⲘ #𐁁𐀓𐀠𐀴𐀍
+#Shkypi #شكينة
+#Shkypni #שכינה
+#Shkypnija
+#Shkypri #كڡر
+#ΚΥΠΡΙΣ #כפר
+#Shkyprija
+#Shqypni
+#Shqyp
+#Tosk
+#Tosknisht
+#Toskërisht
+#Toscan
+#Tushkan
+#Tuscanus
+#Etruscus
+#Shqipni
+#Shqipnija
+#Shqipëni
+#Shqipënija
+#Shqipëri
+#Shqipërija
+#Shqipëtar
+#Accipiter
+#Shqip
+#Scipio
+#Scupi
+#Пушка
+#Shkupi
+#Gypsy
+#ΑͿΓΥΠΘΙΑΝΟΜ
+#Gitan
+#Ashkali #أشكل
+#Rom
+#Roma
+#Rama #राम
+#India
+#Indra #इन्द्र
+#Rodin #رعدين
+#Adrian
+#Darius
+#Darðania
+#Dardania
+#Kosovo #Kosova #Kosovë #←⊖سۋء
+#Kusawo #سوى #Kusawa #→⊕سواء #Kusawë
+#Mandarin
+#Orfe #ΟΡΦΕϒΣ
+#Arifi #אריפי
+#Ε὘ΡΩΠΑ #אירופה
+#Evropa #Evrope #Evropë #Gegë
+#Europa #Europe #Europë #Toskë
+#ΗϜΡΩΦΑ #Ʃkyp
+#Evrôpa #هۋرغڡة
+#Evrôpë #هۋرغڡة
+#Êvrôfa #حۋرغفة #Êvrôfë #حۋرغف
+#America #Tosk
+#Amenica #Geg
+#USA
+#World
+#Tokë #طعق #Toka
+#Botë #بعث #Bota
+#Koajlësë‑θjë‑alë #Celestial #Clavis #Tʃêlsë
+#Shumen #Geg #Sumer #Tosk
+#Shemithic #Semitic
+#Shemanthic #Semantic
+#Arabia
+#Dune
+#Dunjã #دنيا
+#Oalm #عالم
+#Universe
+#Nirvana
+#Ovranos #عۋرة #عۋررانعس #ओवर्ण
+#Ovô #عۋ
+#Evren #حۋرحن
+#Avranus #اۋرانوس
+#Vrãnus #ۋرأن
+#Kvaruna #वरुण #ארון
+#Kvr #كۋر
+#Kvn #كۋن
+#Kun #كون
+#Teus
+#Dêus
+#Dêwa #देव
+#ΔΊ #दी #द्यु #द्यो
+#Dius
+#Divus
+#Divinus #दिव्य
+#Vandaus #ۋند #वान #वद
+#Vedë #वेद
+#ΖΉΝ
+#ΘΆΝ
+#ΤΆΝ
+#ΖΆΝ
+#ΔΆΝ
+#ΖΆΣ
+#ΖΕΎΣ
+#ΔΕΎΣ
+#ΔΈΟΣ
+#ΘΕΌΣ
+#ΔΙΎΣ
+#ΔΊΑΣ
+#ΔΙΌΣ
+#ΘΙΌΣ
+#ΣΙΌΣ
+#ΑΧΑΙΑΣ #ΑΧΑΙΑ #אכאיה #Akhaia #Achaia
+#ϜΑΓΓΗΛ #ΑΓΓΕΛΟΣ #Vang‑êl #ۋنجائيل
+#Alehim #ΑΛΕϨΙΜ #Алеһім
+#Alvehim #ΑΛϜΕϨΙΜ #Алвеһім
+#Alleh #ΑΛΛΕϨ #Аллеһ
+#Jewe #Jhwh #Jehweh
+#ͿΕͶΕ #ͿϨͶϨ #ͿΕϨͶΕϨ
+#Бодгі #बोधिसत्त्व
+#Бог
+#Ʒodg #ژعدگ
+#Odg #עֹדגְ #عدج
+#Guth ##G𐌿𐌸
+#Zot #Zoti #Ɛot #צעט #Ɛoti #ضعت #‎حضرات #ϠΟΤ #ͲΟΤ
+#ΘΩΘ #תחות #ΘΟϒΘ #تحوت
+#Ħyjnië #حۈين
+#i
+#Shkrjmithë #شكريم</pre>
+								</details>
+								<!-- END DETAILS -->
+
+								<!-- BEGIN PRE -->
+								<pre>#CONSTANTINOPLE
+#ISTANBUL
+#ATHENS
+#SOFIA
+#APOSTOLOS
+#WORLD
+#MONDE
+#MUNDO
+#MECCA
+
+→⊕⊕⊕ #DrugKërmArjë @MARIEDRUCKER #MARIEDRUCKER #DAKËCRIRËRUMË #MARDUKH #ANNUNAKI #KAJLQANUNAË #BAB‑YL‑ÔNË #SYLVASYLIË #KÃLYQBOË #ÊVRÔFË #OPRŒË #PŒORË #ÉUROPË
+→⊕⊕⊕ #DrugKërmArjë
+←⊖⊕⊕ @MARIEDRUCKER
+←⊖⊕⊕ #MARIEDRUCKER
+→⊕⊖⊕ #DAKËCRIRËRUMË
+←⊖⊖⊖ #MARDUKH
+←⊖⊖⊖ #ANNUNAKI
+→⊕⊕⊕ #KAJLQANUNAË
+→⊕⊕⊕ #BAB‑YL‑ÔNË
+→⊕⊕⊕ #PERSIA
+←⊖⊕⊖ #SYLVASYLIË
+→⊕⊕⊕ #MÊLAQIË (pôθse‑tricë)
+→⊕⊖⊕ #KÃLYQBOË
+→⊕⊖⊕ #FRANCE
+→⊕⊕⊕ #ÊVRÔFË
+←⊖⊖⊖ #EURÔPE
+←⊖⊕⊖ #ÉVROPË - HAVÄJAË (MKSQ.)
+→⊕⊕⊕ #OPRŒË
+→⊕⊖⊕ #PŒORË
+←⊖⊖⊕ #POŒRË
+←⊖⊖⊖ #ÉUROPË
+→⊕⊖⊕ #PARIS (←⊖Ǐ)
+→⊕⊖⊖ #RUSPYË
+→⊕⊖⊖ #MASTROPË
+←⊖⊖⊖ #SÉRPË‑ÉNTË
+#ISLAMABAD
+#AVROÐJΘÉAË #KARNFë #QRÃNFË #OĦÊTRƔÔNOFSË
+#JRUƩLJMË
+
+
+神
+Ʒʒuddjusë − درجدسججود‎ درجدسجودد‎
+M‑ÊƩ‑ƩÊNGË‑RË,
+AJZGDË (GAZMENDË) − ܐܝܙܓܕܐ
+TABULARË − ܛܒܠܪܐ (TAÔCODÊKS)
+ƩLJϦË − شليخ − ܫܠܝܚܐ − שליח‬
+RSULË − رسول − ܪܣܘܠܐ [rʃul / rsul]
+ALILEHË − الإله [al-ile]
+NBJË − נביא‬ − ܢܒܝܐ‬ − نبي [nbije] [rsul al-ile nbije]
+MESSAGER
+DE
+AL‑ILEH
+=
+OUTIL
+MECANIQUE آلي [aali]
+ALAË − آلة [ala]
+ALTË − الت [alt]
+AVTO‑MAΘIQUE
+ALIË − آلي [aːliː]
+DU
+ĦAULΘ
+على [ola]
+DE‑SQÊNDUË
+ILAË − إلى [iːla], pré‑fixë avant l’at‑tribuθ إائيل [ajil].
+حجهۋارائيله حشملكهروبائي
+ÔMÊLEKTRIQË − ΩΜΗΛΕΚΤΡΙϘΌΝ
+KARUBJMË − ΚΕΡΥΒΑΙΙ − كاروبيم − ܟܪܘܒܐ‬ − כרוב‬
+ΖΕΎΣ
+ΗЃΕϜΡΕΪ‑ΊΛΗ − غبراء‑ائيل
+LË
+PRO‑TEGΘ‧OR
+TUT‧OR
+DË
+L’ADÊMÊTÊRRA-MARÉ
+GAÏA.
+
+SON
+LIVRË
+E‑SPRIT − ܣܦܪ − سفراء − ספר‬
+&amp;
+MANUÊL
+ÊƩÞË
+L’AL‑ILÉ
+QA’OVRĀNË − القاعۋرأن − אלקאעורן‬
+TʰÉORAH − تاوراة − תאֵוֹרַה‬
+PVRANA − پآورانى − פֵאוּרַאן‬ − पुराण
+VÉDA − वेद
+
+OLA [ola]]
+ALA [ɒla]ألعلى
+SONT
+LES
+DÉITÉS
+DIVINES
+AVASTRALE
+D’EN
+HAULΘ
+(ϷΑΛ‧ΑΣ [ʃɑl·ɑs]
+(ϷΑΛ‧ΗΝ‧Η [ʃɑl·ɛn·ɛ] − द्यु
+(BRILLANCËS
+(DIUS / ديووس ديو
+(DEUS
+(DIU − दिव [dju]
+(DEVA − देव,
+(AUSSI
+(NOMMÉ
+(EN
+(ORBITIEN − عربيث
+(MALAJIKATH − ملائكات)
+(AETHER).
+
+ET
+LES
+ALI − آلة آلي
+SONT
+LES
+DÉITÉS
+DE‑SQÊNDUS − إلى [ila]
+D’ICI
+BAS (SHÊMERA).
+ÃLĦÊ ألح
+LË
+MIRAGË − إلى آل
+(L’A‑QÊNS‧ION − ܣܘܠܩܐ‬ ܡܰܣܩܳܢܐ‬
+(DU
+(PRO‑PHÊΘË − پرع‑فاتح
+(=
+(VOYANΘ − عراف
+(PORÊFË − پعراف [PORƐF]
+(QOER‧AΘ‧OR
+(المعراج‎ الإسراء و [ƐL-ˀISRAʔ WA ƐL-MORAG]
+(פרוּפֶּא‬ − पित्र्य
+(الإسراء [ƐL-ˀISRAʔ]
+(LË
+(VOYAGE
+(NOCTURNE
+(&amp;
+(المعارج‎ [ƐL-MOARG]
+(LES
+(VOIES
+(D’A‑SQÊNS‧ION − ܣܘܠܳܩܐ‬ ܡܰܣܩܳܢܐ‬.
+
+ĨLÉ − إله (“god”)
+ĨLAH − إله (“god”)
+AOLAʔ − اعلاء (“elevation”)
+AOLA − اعلی
+OALIË − عالي
+OALAË − عالة
+OLIAË − عليا
+OLA − علی
+ALITË − ٱلإت
+ILAΘË − آلات
+HÉLLAΘ − هلات
+ALAΘI − آلاتي‌
+ALAH − آلة
+ALI − آلي
+IYAL‧AΘ − إِيَالَت
+VILAÏAΘ − ولایت
+WOLΘ-ÂGË − ولتاژ
+DAWL‧AΘ − دأولآت
+AL-VILAY‧AΘ − الوِلاَيَاتٌ
+L’ETAT − أل لٱتى [AL-LAΘA]
+L’ALΘESSË
+ULΘIMË,
+LA
+DÉESSE
+UΘILË
+HALTI − التی
+MITËRL‧AΘ − مإترلات
+IL‧AΘ − إلٱت
+DAWL‧AΘ − دأولآت
+AL‧AΘ − الت
+ΜΟΎΣΑ
+ἈΛΊΤΤΑ
+ἈΛΙΛΆΤ − إلاهات ألهات,
+DES − ائيل [ajˀɪl]
+OVRANIANS − ΟΎΡΑΝΊΗΝ − عۋرأنياث [ovrɑ̃njɛn]
+ἈΦΡΟΔΊΤΗ − اڡرعذیثه − אפּרידיטה‬ [aproðjθɛ]
+ALILATH − ἈΛΙΛΆΤ / ἈΛΊΤΤΑ − אַפָּר‬ אוראניה‬ אַפַלַוַדַתַה‬ − اللات‎  أورانيا آپريديته
+
+ÃHÉVRAË − اهۋرا (AHÉVRA, “ZÔTË, GODË”)
+HÉVAË − هۋا (HVA / ÉVA, “HÉAVÈNË / HEAVEN”)
+Ã‑HÉVAÃË − أ‑هواء (A‑HVAA / A‑ÉVAA, “ÄLLÔVOË, AF‑FÊC‑ΘI‑ÔNË / ALLOVING, AFFECTION”)
+ISË
+ÐË
+DWAAË − دۋاء (DÊWA, “RÈ‑MÉDY / REMEDY”),
+دهۋاء أۋإدهۋراء / आविद्‑देव‑वर (VIDÉVARA, “OƷDAGOË (ODG {{{2}}}‬ ) ISË PÊRË‑FÊQΘË / IS PERFECT”),
+ΕϜΡ‧ΩΣ (VÉRÔSË or ÉVRÔS, “LOVE”),
+ΕϜΡΙΤ‧ΙΟΝ
+ΕϜΤΑΡ‧ΙΟΝ,
+MÉDË − مَهَّدَ (“lévël‧ing, nivil‧ing, êqwal‧ing”) [medigwid]
+M‑ÉDIJIË م‑هدی (“THE UNI‑FJCA‑TÊVRË GWIDË”) [medigwid]
+ISH‑VAPARMAGFO ישע‬ (ISHWO, “SHALVAΘ‧ION”)
+ΑΛ‑ΙΣΣΟΙ‧ΟΣ / אֱלִ‑ישָׁע‬ / ܐܶܠ‑ܝܫܰܥ‬ / ال‑يسع
+OJƩA − [ojʃa] / OJSA [ojsa] − عيسى ܥܝܣܰܐ‬
+AL‑IƩOLIMA − אֱלִ‑ישָׁעלימא‬ / ال‑يسعليما [al‑isholjima].
+
+TOLVOÊRUΘË
+=
+TOLÊRÔ
++
+VERUS (TRUE)
+LOVË
+VROMF
+ÐË
+OLÉVÈNÉGZAODÉI − علهۋحنهجده.
+∞ ‎(“THE ËN‑FIN‧ITË”).
+
+QRAFMAΘE − ϘΡΑΦ‑ΜΑΤΕΎΣ − قرأ − קרממטאוס‬ − [qram·maθ·evs]
+QRAPHE − ϘΡΑΦΕΎΣ [qraf·evs]
+QRYBMENE − ϘΡΥΒΜΈΝΕΎΣ
+ΜΝΗΜΟΝΕΎΣ [mnɛm·on·evs]
+ΙϷΕΡΕΎΣ − ישהר‧אוּס‬ יראוס‬ − يشهر‧اوس  [jer·evs]
+ΖΕΎΣΗ − זאוס‬ − 雷神 [z·evs]
+ΠΕΡΣΕΎΣ [pers·evs]
+ϜὈΡΦΕΎΣ − אורפיֵאוס‬ [orf·evs]
+ἈΧΙΛΛΕΎΣ − אַכילֵאוס ‬ − 鹰 [aqʰil·levs]
+ΑΎΣΤΡΑΛΕΎΣ − אַוסטרַאלֵאוס‬ [avs·tral·evs]
+ΆΝΩΡΧΕΎΣ [anɔrqʰ·evs]
+ΣΘΙΝΑΡΕΎΣ [ʃθin·ar·evs]
+ΣΘΡΑΤΗΓΕΎΣ − איסתרַטגֵאוס‬ [ʃθraθ·ɛg·evs]
+ΑΎΓΟΎΣΤΕΎΣ − אַוגוּסטֵאוס‬ [avgovsθ·evs]
+ϷΕΒΑΣΙΛΤΕΎΣ [ʃe·bas·ilθ·evs]
+ΓΑΛΑΞΊΕΎΣ [galagzi·evs]
+ἈΘΗΛΕΎΡΟΥΝΑΣΤΙΛΕΎΣ [atɛlevrunasθil·evs]
+ΑΣΤΕΡΟ‑ΕΙΔΕΎΣ − אַסטֵרוֹאִידֵאוס‬ [asθero·ejð·evs]
+VÉDË − वेद ‎(veda)
+DÉVË − देव ‎(deva)
+ASTRA − अस्त्र ‎(astra)
+ΜΕΤΈΩΡΟ‑ΛΟΓΕΎΣ − מֵטֵאוֹרֵאוס‬ [meθ·eɔro·lug·evs]
+PHONEUS − ΦΟΝΕΎΣ
+Ë‑VIDÊEUS − Ά‑ϜΙΔΗΕΎΣ [ʰadɛ·evs]
+ΔΊΕΎΣ
+ΣΟΊΔΕΏΔΕΎΣ
+स्वर्ण [ɳərʋsə↔səʋrəɳ]
+اۋسثا اۋسع − अवस्थ [avso avesθa (t̪ʰsəʋə↔əʋsət̪ʰ)]
+AVSSË − אוסה‬ [avsa]
+ΑΎΤΕΎΣ [avθ·evs]
+
+ΩΜΖΕΧΆϜΡΗΊΟΤΣΊΌΥΝΣΩΤΉΡΌΝ 多聞天 אוּ’מזִאַכּאֶורִיסִטוּנִיֶסָתַארִסצתרה‬ [ɔmzeqʰavrɛjoθsjunijɛsɔθɛr]
+ΩΜ
++
+ΏΧΡ‧Α
++
+ΏΡΟΣ
++
+ΧΡΥΣ‧ΌΝ
++
+ΧΡΗΣΜ‧ΟΣ
++
+ΧΡΙΣΤ‧ΌΝ ↔ ΧΣΑΡΤ‧ΌΝ
++
+ΣΩΤΉΡ
++
+ΖΕΎΣ
++
+ΏΡ‧Α
++
+ΧΆΡΩΝ
+
+
+ΘΏΘΘΕ‧ƏΝ [tɛħuti te·uni ]
+ϷΟϜΡΑΝ‧ƏΝ − ƩOVRAN‧US 𒌷𒀭 [ovr·ɛn·uni]
+𒀭 | 天神
+ΤΎΡΑΝΝ‧ƏΝ [θyr·ɛn·uni]
+ΤΙΤΆΝ‧ƏΝ [θiθ·an·uni]
+ΤΙΡΆΝ‧ƏΝ [θir·ɛn·uni]
+ΘΡΌΝƏΝ [trun·uni]
+SATORN‧ƏΝ [saθ·orn·uni]
+ΣΕΤ‧ƏΝ [seθ·uni]
+ϘΡΌΝ‧ƏΝ [qrun·uni]
+ϘΟΡΏΝ‧ƏΝ [qorun·uni]
+ϘΡΑΝ‧ƏΝ [qrɛn·uni]
+ϘΟΡΩΝ‧ƏΝ [qorɔn·uni]
+ϘΟΥΡΟΎΝ‧ƏΝ [qovruvn·uni]
+QORNIQS [qor·niqs]
+QORÞÊGS [qorθ·ɛgs]
+QOR‑RÊGÞ‧ÔR [qor·rɛgθ·ɔr]
+QŒRAÞ‧ÔR [qoer·aθ·ɔr]
+QOJRAN‧ƏΝ [qojran·uni]
+QARAN‧ƏΝ [qaran·uni]
+QŒRULE‧VS [qajr·ul·evs]
+QRÊGU‧VS [qrɛgu·us]
+QORAGS − ϘΌΡΑΞ [qor·ags]
+RAWÊN − रवण ‎(ravaṇa) [raw·ɛn]
+DRONA − द्रोण ‎(droṇa) [droɳa]
+RÊM‧AN − رحمان [rɛm·an]
+RUMAN − رومان [rum·an]
+RUWÊ‧ANI − روحان [ruwɛ·an]
+VERAGS [vɛrɑ̃gs]
+VORÔN − غرابان − ܥܘ݂ܪܒܐ‬ − עורֵבּן‬ (ovrɛb‧an) [vorɔn]
+VERÊN [ver·ɛn]
+VERANÏÊ [veraɳɛ]
+VERAN [ver·an]
+VARAN [var·an]
+VARUNÏË [ʋəruɳ]
+QŒLESÞË [qoɛl·esθ]
+ÊKKLÊSIAË − ܐܰܩܠܝܣܺܝܰܐ‬ [ɛq·qles·ja]
+SQÊÔË [sqɛ·ɔ]
+SQULLË − ܣܶܩܠܐ‬ [sqəl]
+ƩKʰOLA − שכל‬ [sqol·a]
+ƩQALA − ܫܰܩܶܠ‬ [ʃqala]
+ϷΕΛΛΗΝΊϘ‧Α [ʃellɛniqa]
+СОҀОЛ [soq·ol]
+AQVILA [aqvil·a]
+QOÊL [qo·ɛl]
+ÊQWALIS − واليسحق [ɛq·wal·is]
+KLEMÊNS − كله [kle·mɛns]
+KLAREÔ [klar·eɔ]
+QLIMAÞ‧Ë − ܩܠܝܡܐ‬ [qlim·aθ·us]
+KYLARAÞ‧Ë [qyl·ar·aθ]
+QÔLD‧Ë [qɔld]
+ƷOLDË − ژعلد (“ar, avrum, or”) [ʒold]
+QAÊL − ܩܰܠܶܣ‬ [qa·ɛl]
+KALVERN‧A − كالۋحرنة [kalvɛrn·a]
+QRAN‧A [qran·a]
+ÔQʰRAN‧A [ɔqʰr·an·a]
+OVRAN‧A − عۋرأنة − वरण (varaṇa) [ovrɑ̃n·a]
+OVARI‧UM − عۋرة [ov·um / ovarjum]
+AV‧Ô [av·ɔ]
+ΕΊΣ [ejs]
+AVIS [avjs]
+AVE [ave / awe]
+OV‧Ô [ov·ɔ]
+
+ΑΡΣΑΦΗΣ − آرأس
+ΆΡΤΕΜΙΣ
+ΕΡΜΉΣ − ܐܰܪܡܝܣ‬
+&amp;
+ΊΡΙΣ (“rainbow”),
+ΈΡΩΣ (“love”)
+ΙΕΡ‧ΌΣ (“sanctified, holy, sacred”)
+ΏΡΟΣ (“Horus”)
+ͶΑΡ‧ΗΣ (“war”)
+&amp;
+ͶΈΡ‧ΙΣ (“discord”)
+ΊΣΙΣ (“Isis”)
+ΟΣΙΡΙΣ (“Osiris”)
+ΙΕΡΕΎΣ (“priest”)
+ΙΈΡΑΞ
+ΙΕΡΈΑΣ (“clergyman”)
+ΑΙΡΓΤ‧ΌΣ (“falcon, hawk”)
+ΠΑΡΘΕΝ‧ΟΣ (“virgin”)
+ΜΙΘΡ‧ΑΣ (“Mithras”)
+ΜΗΤΕΡ‧ΕΣ (“mother”)
+ΠΟΡ‧ΟΣ (“passage, way”)
+ΘΟΗΡΙΣ (“Thoeris”)
+ΑΤΑΡΓΑΤΙΣ (“passage, way”)
+ΆΡΠΟ‑ϘΡΑΤΗΣ (“passage, way”)
+
+Vrôm - Ʃrômë - Prômë - Rômfë
+
+Belʒium
+Pêlgium پلگيومبرژيوم
+Otshwapulovarubégth عثواشڡولعۋاروبهجت,
+Ruman רוּמַן / رومان,
+
+lind
+në
+Scupi [ʃkupi]
+(Shkupi / Сҁопје :
+(Scipii
+(Cornelii
+(Covrênë
+(Al-Ile
+(Ovarium
+
+September
+1979,
+Ʃɕyp‑ni‑alë (Qrêgwë. Gégë.)
+and
+S.P.Q.R
+Shqipëri (Roman. Tosk.)
+Ala
+
+Iprimalea Im‑periala אמפריאלה, Per Me : Peri परी, Pari پری, Freya פריה, fury, fairy, fée, théa…
+
+Mëgaheadinô مگاهدينه
+Maggedunia מַאגֵהדוּנִיָה / щита читать चित ‎(cita)
+चित्त ‎(citta)
+इन्द्र ‎(indra) [rədni↔indrə]
+رعدين [rodin] 雷電 ;
+Për
+unë|unê
+e
+prun
+Peruni पुराना ‎(purānā)
+प्रण ‎(praṇa)
+प्राण ‎(prāṇa)
+Ʒɛvosþ ‎(Ʒɛvosþ)
+زأڤس Zevsê
+فوزي [Fevzi / Fawzi]
+le
+Phaseur
+
+Waleöla ואלהלה | والهالا
+אַרגדינַאלֵה מִן עָדִין | جنات عدن | Arbogudin‑ali‑mên‑Odinë (Госъдарь Гоздару Господін قعدوس) :
+
+Perpetual Student / Pérë‑pêθw‑alë Ʃθudë‑ênθë ‑ عطالۋاربانفثسيان :
+
+ΚΈΡΒΕΡΟΣ − قربروم − קרברום‬
+− عقرب − עקרב‬
+− ϘΑΡΑΝϒΣ قرن − קרן‬
+ΙΛΗ [ʰilɛ] :  Al‑Ilé − الله − אל’לה‬
+→⊕⊕⊕ ϷἍΓͿƏ‑ΝƏ [ʃagjə·nə] :
+→⊕⊕⊕ ΛΕΓΙΏΝ [legi·ʰɔn] :
+→⊕⊖⊕ ΑΛΙΛΑΤ [alileθ] :
+→⊕⊕⊕ ϘΑ’ΟΎΡΑΝΌΝ [qa·ovr·an·un] : QAVRUANUNË − قآورآنون − קאוראנון‬
+↔⊙⊕⊕ Ə‑ΜΕΤ‑ΡƏ‑ΜƏ [ʰə·meθə·rə·nə] (mésô, mêns‑unô, →⊕méθô, ←⊖mênθô) :
+ΘΕΟΡΑΤƏ‑ΜƏ [teʰo·raθ·ə] : TʰÉORAΘON − تٱوراثون − תאֵוֹראַטוֹן‬
+ΗΠΟΎΡΑΝΙΣ [ɛpovr·an·is] :  OPUVARUNI − پآۋرونإها − פִאורוּנִי‬
+ϘΥΒΕΡΝΏ [qyvern·ʰɔ] :  − أكبر
+TƩÉVÊRIË
+ΓΗΒΟΥΡΕΙΉΛ [gɛb·ovrej·ʰɛl] : ƷVÉDARUJÊLË − جابورائيل − גיבּוּראל‬
+ΏΧΡΥΣΩΤΆΡΗΣ [ɔqʰrysɔt·ʰarɛs] :  − زراسطآرس
+AL‑ÏUPAΘIR − اليوفإطر היוּפיטֵר‬ יוּפיטֵר‬ [ju·fit·or
+ΠΆΣΘƏ‑ϜΡƏ‑ΣƏ פָּסטוֹרָ‬ [pasθə‑vrə]
+ΠΑΤΡΙΏΤƏ‑ΣƏ פַּטרִיוֹט‬ [pa·tri·orθ]
+→⊕⊕⊕ TPALIRFSIË ⇔ ←⊖⊖⊖ ΦΙΛƏ‑ΠΑ‑ΤΡΙ‑ΣƏ
+ΜͿΝƏ [mjn] : MJNË − من − מִן‬
+ƩOMALË [ʃomal] : − شماء שַׁמים‬
+ΖΕΎΣΗ [z·evs·ɛ] :
+→⊕⊕⊕ PARJFSÉË פאריפ׳ס‬ →⊕⊖⊕ ΠΕΡΊΦΑΣ [perʰif·as] :
+→⊕⊖⊕ ΖΉΝΩΝ [zʰɛnɔn] : ZÊNŨNË
+→⊕⊕⊕ ΑΚΡΙΒΉΣ [aqrjbʰɛs]
+→⊕⊕⊕ VRÉHË‑USË ⇔ →⊕⊖⊕ ϜΈΡΟΣ [ver·os]
+→⊕⊕⊕ ƩAOJZÔNOSË - ΣΏΖΩΝ [sʰɔz·ɔn]
+→⊕⊕⊕ ϘΟΡΆΓΩΝ [qorʰag·ɔn] פְּרוֹטֶסטוֹר [pro·teʃ·θ·or
+→⊕⊕⊕ ϘΆΡΓΙΑ [qʰarg·ja]
+ΙΈΡΑΓΩΝ [jerag·ɔn]
+ΑΠΌ [apʰo]
+→⊕⊕⊕ ΆΡΤΑΡΤƏ‑ΜƏ (Dajãnë.) [ʰarθ·arθ·un] טַרטַרוֹס [tarθs·tarθs·os
+ΠΕΡΊ‑ΟΔƏ‑ΜƏ [perʰjoð·un]
+Ο [o]
+ΦΟΙΤΗΤΉΣ [fojθɛθ·ʰɛs] : AL‑TALJIB − التالب ה‑טליבּ‬
+ΑΠΌ [apʰo] :  min − من − מִן‬
+ΘΡΗΣΚΕΊΑ [trɛsge·ja] : DÏNI − دين − דת‬
+ΤΟΥ [θu]
+ΕΙΡΉΝΗ [ejrʰɛn·ɛ] : AL‑I‑ƩOLIIMAƏ − إسلام − عيراني − אישׂלַם‬
+ΕΙΡΗΝΦΩ [ejrɛnf·ɔ]
+ΝΙΡΗΦΩ [nirɛf·ɔ]
+ͰΗΚΑ͂ΤͶΑΛΗΝΑΘΕϨƏ‑ΣƏ [ħêkɑ̃twalɛθehə·sə]
+→⊕⊖⊕ ϘΕΡΒΟ − قهربو − [qerbo]
+→⊕⊖⊕ ϘΡΑΝΟ − قرآن − [qrano]
+→⊕⊕⊕ ϘΡΑΒΟ − قرآب − [qrabo]
+→⊕⊕⊕ ϜΑΡΟΎΝΑ − [[wikt:#Arabic|]] − [varuna]
+→⊕⊕⊕ ΟϜΡΑΝƏ‑ΣƏ − آۋران − [ovranən]
+ϜΡΥΝΤΉ − ڤرونث − [vronθɛ]
+ϜΡΥΝΏ − ڤرون − [vrun‑ɔ]
+ϜΡΈΝΑ − [[wikt:#Arabic|]] − [vrena]
+→⊕⊖⊖ ΝΕϜΡ‑ΏΝ − نهڤرغن − [nevrɔn]
+→⊕⊖⊖ ΝΕΡΟ − نهرو − [nero]
+→⊕⊖⊖ ΝΑΥΤΙΛΊΑ − [[wikt:#Arabic|]] − [navθilia]
+ΝΑΥΣ − [[wikt:#Arabic|]] − [navs zevs divs vessɛl]</pre>
+								<!-- END PRE -->
+							</td>
+                    <td>Tag's</td>
+                    <td>2018-09-23 13:39</td>
+                  </tr>
+                  <tr>
+                    <td>15758 - Cita, Sevcet, Cansever &amp; Müjde.txt</td>
+                    <td><br></td>
+                    <td>YouTube Up‑Load</td>
+                    <td>2018-09-06 7:28</td>
+                  </tr>
+                  <tr>
+                    <td>HWInfo64_5.70.txt</td>
+                    <td><pre>============================== Version 5.72 ==================================
+Released: Jan-31-2018
+
+- Fixed enumeration of RAID drives on AMD Promontory chipsets.
+- Fixed disk activity sensor names on some RAID systems.
+- Fixed reporting of Total Memory Encryption feature status in summary.
+- Fixed flickering of RTSS OSD in some applications with high framerates.
+
+============================== Version 5.74 ==================================
+Released: Mar-6-2018
+
+- Fixed a possible crash on some later AMD GPUs.
+- Fixed a possible crash on some systems with multiple network adapters.
+- Fixed crashing on AMD Vega M GPUs (Kaby Lake-G).
+- Fixed summary window size when changing monitor scaling.
+- Fixed a possible crash during short report file creation on systems with NVMe.
+
+============================== Version 5.80 ==================================
+Released: Apr-10-2018
+
+- Fixed reporting of current DMI link speed pro several Intel CPUs.
+- Fixed reporting of AMD Zen temperature when using alternate scale range.
+
+============================== Version 5.82 ==================================
+Released: Apr-12-2018
+
+- Fixed a possible BSOD on some older machines.
+- Fixed a possible application crash on some AMD Bulldozer systems.
+- Fixed a possible application crash on some systems with Chinese or Japanese keyboard.
+
+============================== Version 5.84 ==================================
+Released: May-23-2018
+
+- Fixed a possible crash on some systems with larger VBIOSes.
+- Fixed enumeration of multiple VBIOSes in VFCT.
+- Fixed monitoring of Extension/Assistant fans on some ASUS 100-300 Intel series boards.
+- Fixed monitoring of EC temperatures on some ASUS Z170 series mainboards.
+- Fixed a possible crash on some systems using Microsoft East Asian/IME keyboards.</pre>
+							</td>
+                    <td>Ʃofθ‑varë</td>
+                    <td>2018-07-07 18:15</td>
+                  </tr>
+                  <tr>
+                    <td>W.A.M.P. &amp; PostGreSQL Setup Instruction &amp; Installation.txt </td>
+                    <td>
+				  <pre>01. https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+02. https://openclassrooms.com/courses/1187891-installation-de-postgresql-et-de-phppgadmin-avec-easyphp-wampserver
+
+
+La manœuvre décrite dans ce tutoriel a été exécutée avec les versions suivantes : EasyPHP 3.0, WampServer 2.0i, phpPgAdmin 4.2.2 et PostgreSQL 8.3.7.
+Elle peut être légèrement différente selon les versions.
+
+Dans la suite de ce tutoriel, j'utiliserai DOSSIER_EASYPHP et DOSSIER_WAMPSERVER pour remplacer le chemin du dossier de votre installation d'EasyPHP ou WampServer qui peut être différent selon les ordinateurs.
+Installation de PostgreSQL
+Téléchargement
+
+Tout d'abord, il faut télécharger PostgreSQL, la dernière version de préférence (à l'heure où j'écris ces lignes, la version 8.3.7).
+Pour ce faire, il suffit d'aller sur la page de téléchargement du site officiel, de cliquer sur la version voulue puis, sur la page suivante choisir « win32 », de choisir la version .zip et d'attendre quelques secondes sur la dernière page que le téléchargement se lance ; s'il ne se lance pas automatiquement, choisissez un lien miroir parmi ceux qui vous sont proposés.
+Installation proprement dite
+
+Une fois le téléchargement terminé, on se retrouve avec une archive nommée postgresql-8.3.7-1.zip (les numéros pouvant changer selon la version).
+Archive extractible
+
+Une fois cette archive extraite, nous pouvons voir plusieurs fichiers d'installation et de mise à jour.
+Archive extractible
+
+Le seul fichier qui nous sera utile pour ce tutoriel est le fichier postgresql-8.3.msi, on le lance donc, et une belle fenêtre apparaît.
+Installation - Étape 1
+
+Choisissez votre langue si ce n'est pas déjà fait puis cliquez sur « Start &gt; ».
+
+La fenêtre suivante est un simple avertissement vous demandant de fermer tous vos programmes en cours, cliquez simplement sur « Suivant &gt; ».
+
+La troisième fenêtre contient les notes d'installation à lire avant l'installation. Cliquez encore sur « Suivant &gt; ».
+
+La fenêtre suivante est plus importante, elle permet de configurer les options.
+Installation - Étape 4
+
+Si vous ne savez pas où vous mettez les pieds, laissez par défaut, sinon, selon vos besoins, activez ou désactivez les options que vous voulez installer ou non.
+Afin que PostgreSQL soit installé dans les fichiers d'EasyPHP/WampServer (ce qui n'est pas une obligation), sélectionnez « PostgreSQL », cliquez sur « Parcourir », et allez chercher le dossier d'installation d'EasyPHP/WampServer et rajoutez au chemin « postgresql\ », afin d'obtenir un dossier d'installation similaire à celui de l'image.
+Enfin, cliquez sur « Suivant &gt; ».
+
+La fenêtre qui suit, permet la configuration du service.
+Installation - Étape 5
+
+Laissez par défaut, saisissez deux fois votre mot de passe puis cliquez de nouveau sur « Suivant &gt; », là une fenêtre s'affiche pour confirmer la création de l'utilisateur « VOTRE-PC\postgres », cliquez sur « Oui ».
+
+À ce niveau de l'installation, il est possible qu'une fenêtre vous disant que le mot de passe que vous avez spécifié est faible et vous propose d'en générer un autre. Libre à vous d'en générer un nouveau (sachant, je vous préviens, que le mot de passe généré comportera environ trente caractères en tous genres : chiffres, lettres et symboles). Si vous cliquez sur « Oui », pensez à le noter !
+
+L'étape suivante est l'initialisation du groupe de bases de données.
+Installation - Étape 6
+
+Vous devez saisir ici le nom d'utilisateur et le mot de passe qui seront nécessaires à la connexion à la base de données, que ce soit dans vos scripts ou dans phpPgAdmin, saisissez donc deux fois votre mot de passe, et cliquez sur « Suivant &gt; ».
+
+L'étape suivante est l'activation des langages de procédures, si vous avez laissé la configuration par défaut, seule la case à cocher « PL/pgsql » est disponible et est déjà cochée, laissez-la comme telle, puis cliquez sur « Suivant &gt; ».
+
+L'étape qui suit est la dernière étape avant l'installation des fichiers sur votre ordinateur.
+Installation - Étape 8
+
+Cette étape vous propose différents « modules de contribution », chacun de ces modules fournit des fonctionnalités, plus ou moins utiles selon l'utilisation que vous ferez de PostgreSQL. Vous trouverez une description précise de chacun de ces modules dans le manuel PostgreSQL spécifique à la version.
+Cochez les cases des modules qui vous intéressent, puis cliquez sur « Suivant &gt; ».
+
+L'étape suivante vous informe que PostgreSQL est prêt à être installé. Cliquez simplement sur « Suivant &gt; » pour lancer l'étape finale de l'installation.
+
+Une fois l'installation terminée, un message de confirmation apparaît, vous proposant d'exécuter « Stack Builder ».
+Installation - Terminer
+
+Stack Builder vous permet d'installer des pilotes supplémentaires, des modules et d'autres logiciels, laissez la case cochée si vous voulez voir ce qu'il peut vous proposer, sinon décochez-la et cliquez enfin sur « Terminer ».
+
+PostgreSQL est désormais installé ; afin de vérifier le bon déroulement de la configuration, lancez pgAdmin à partir de votre menu démarrer : PostgreSQL 8.3 &gt; pgAdmin III.
+Une fois lancé, faites clic droit &gt; « se connecter » à votre serveur qui apparaît sur la gauche de la fenêtre.
+Test de connexion - Étape 1
+
+Une fenêtre apparaît, vous demandant votre mot de passe, il s'agit du second mot de passe que vous avez saisi lors de la configuration.
+Test de connexion - Étape 2
+
+Enfin, si la connexion réussit, la croix devant votre serveur devrait disparaître.
+Test de connexion - Étape 3
+Installation de phpPgAdmin
+Téléchargement
+
+Le téléchargement se fait sur le site officiel de phpPgAdmin, il vous suffit de cliquer sur l'un des trois liens proposés et d'attendre quelques secondes sur la page suivante.
+Installation et configuration
+
+Une fois le téléchargement fini, on obtient une archive qui, une fois extraite, nous révèle un dossier du même nom que l'archive :
+Image utilisateur
+
+Renommez dès à présent ce dossier en « phppgadmin », pour plus de facilité lors de la configuration future d'EasyPHP/WampServer, puis déplacez-le à la racine du dossier d'installation d'EasyPHP ou dans le dossier « apps/ » de WampServer.
+Sous EasyPHP:
+Déplacement du dossier 'phppgadmin'
+
+Sous WampServer:
+Image utilisateur
+
+Maintenant qu'il est au bon endroit, nous allons le configurer pour qu'il puisse se connecter à PostgreSQL. Pour ce faire, ouvrez le fichier « phppgadmin\conf\config.inc.php » avec l'éditeur de texte de votre choix puis exécutez les actions suivantes :
+Chercher
+
+$conf['servers'][0]['host'] = '';
+
+
+Remplacer par
+
+$conf['servers'][0]['host'] = '127.0.0.1';
+
+
+Chercher
+
+$conf['servers'][0]['pg_dump_path'] = '/usr/bin/pg_dump';
+
+
+Remplacer par
+
+$conf['servers'][0]['pg_dump_path'] = 'DOSSIER_POSTGRESQL\\bin\\pg_dump.exe';
+
+
+Chercher
+
+$conf['servers'][0]['pg_dumpall_path'] = '/usr/bin/pg_dumpall';
+
+
+Remplacer par
+
+$conf['servers'][0]['pg_dumpall_path'] = 'DOSSIER_POSTGRESQL\\bin\\pg_dumpall.exe';
+
+
+Cette dernière modification (facultative) permet l'emploi d'utilisateurs interdits par défaut : pgsql, postgres, root, administrator ainsi que les connexions sans mot de passe.
+Chercher
+
+$conf['extra_login_security'] = true;
+
+
+Remplacer par
+
+$conf['extra_login_security'] = false;
+
+
+Une fois ces modifications faites, vous pouvez enregistrer puis fermer ce fichier.
+Nous allons maintenant configurer Apache pour faire pointer votre « 127.0.0.1/home/pgsql/ » sur votre dossier « phppgadmin ».
+Sous EasyPHP, ouvrez le fichier « DOSSIER_EASYPHP\conf_files\httpd.conf » et exécutez les opérations suivantes :
+Chercher
+
+Alias /home/mysql "${path}/phpmyadmin"
+
+Ajouter après
+
+Alias /home/pgsql "${path}/phppgadmin"
+
+Chercher
+
+&lt;Directory "${path}/phpmyadmin"&gt;
+
+Options FollowSymLinks Indexes
+
+AllowOverride None
+
+Order deny,allow
+
+allow from 127.0.0.1
+
+deny from all
+
+&lt;/Directory&gt;
+
+Ajouter après
+
+&lt;Directory "${path}/phppgadmin"&gt;
+
+Options FollowSymLinks Indexes
+
+AllowOverride None
+
+Order deny,allow
+
+allow from 127.0.0.1
+
+deny from all
+
+&lt;/Directory&gt;
+
+Sous WampServer,
+allez dans le dossier DOSSIER_WAMPSERVER\Alias\ et créez le fichier « pgsql.conf » contenant ce qui suit :
+
+Alias /pgsql "DOSSIER_WAMPSERVER/apps/phppgadmin/"
+
+&lt;Directory "DOSSIER_WAMPSERVER/apps/phppgadmin/"&gt;
+
+Options Indexes FollowSymLinks MultiViews
+
+AllowOverride all
+
+Order Deny,Allow
+
+Deny from all
+
+Allow from 127.0.0.1
+
+&lt;/Directory&gt;
+
+
+Vous pouvez enregistrer et fermer ce fichier.
+
+Enfin, la dernière action pour que le tout fonctionne est d'activer l'extension « php » nommée « php_pgsql ». Pour ce faire, sous EasyPHP, ouvrez le fichier « DOSSIER_EASYPHP\conf_files\php.ini » et exécutez les opérations suivantes :
+Chercher
+
+;extension=php_pgsql.dll
+
+Remplacer par
+
+extension=php_pgsql.dll
+
+Sous WampServer, cochez simplement la case « php_pgsql » à partir de l'icône située dans la barre des tâche, puis cliquez sur « PHP&gt;PHP Extensions » :
+Image utilisateur
+
+phpPgAdmin est désormais installé et configuré. Afin de vérifier le bon fonctionnement de ce dernier, essayez d'accéder à l'aide de votre navigateur internet à l'adresse « http://127.0.0.1/home/pgsql/ » pour EasyPHP et « http://127.0.0.1/pgsql/ » pour WampServer. Si tout va bien, vous devriez voir la page d'accueil de votre administration phpPgAdmin :
+Image utilisateur
+
+Vous pouvez aussi essayer de vous connecter en cliquant sur votre serveur à gauche, et en saisissant vos identifiants PostgreSQL.
+Intégration à EasyPHP
+
+Cette étape est facultative, vous devriez avoir à l'heure actuelle une installation PostgreSQL + phpPgAdmin fonctionnelle ; ce chapitre consiste à intégrer des liens d'accès dans la page d'administration d'EasyPHP vers phpPgAdmin.
+Voici à quoi ressemblera votre installation à la fin de cette étape :
+Résultat final
+Préparation des fichiers
+
+Tout d'abord, récupérez ces deux images :
+logo phppgadmin easyphp
+logo postgresql easyphp
+
+Enregistrez-les dans « DOSSIER_EASYPHP\home\images_easyphp\ ».
+
+Ensuite, trouvez les fichiers des licences de PostgreSQL et de phpPgAdmin qui devraient être respectivement dans « DOSSIER_EASYPHP\postgresql\ » et « DOSSIER_EASYPHP\phppgadmin\ ».
+Copiez ces deux licences dans « DOSSIER_EASYPHP\home\ », puis renommez-les respectivement en « licence_postgresql.php » et « licence_phppgadmin.php ». Il est probable que lorsque vous les renommerez, un message de confirmation apparaisse, vous demandant si vous êtes sûr de vouloir modifier l'extension des fichiers. Dans ce cas, confirmez en cliquant sur « Oui ».
+
+Ouvrez la licence de PostgreSQL « DOSSIER_EASYPHP\home\licence_postgresql.php » dans votre éditeur de texte, et effectuez les opérations suivantes :
+Au tout début du fichier, ajouter
+
+&lt;?php
+
+include("i18n.inc.php");
+
+?&gt;
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;link rel="shortcut icon" href="images_easyphp/easyphp_favicon.ico" /&gt;
+
+&lt;title&gt;[EasyPHP] - PostgreSQL&lt;/title&gt;
+
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+
+&lt;link rel="stylesheet" href="styles.css" type="text/css" /&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;?php
+
+include("functions.inc.php");
+
+include("header.inc.php");
+
+?&gt;
+
+
+
+&lt;div id="body"&gt;
+
+&lt;div class="container"&gt;
+
+
+
+&lt;?php
+
+button("postgresql", "licence_postgresql.php", "", "#7F7F7F", 0);
+
+?&gt;
+
+
+
+&lt;?php printf($licence_rem, "[&lt;a href='http://www.postgresql.org' target='_blank' class='text1'&gt;PostgreSQL&lt;/a&gt;]"); ?&gt;
+
+
+
+&lt;div class="box_top"&gt;&lt;img src="images_easyphp/box_top.gif" width="760" height="2" alt="--- top box ---" /&gt;&lt;/div&gt;
+
+&lt;div class="box_body"&gt;
+
+&lt;div class="content"&gt;
+
+&lt;pre&gt;
+
+
+À la fin du fichier, ajouter
+
+&lt;/pre&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="box_bottom"&gt;&lt;img src="images_easyphp/box_bottom.gif" width="760" height="2" alt="--- bottom box ---" /&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+Ouvrez ensuite la licence PhpPgAdmin « DOSSIER_EASYPHP\home\licence_phppgadmin.php », et effectuez les opérations suivantes :
+Au tout début du fichier, ajouter
+
+&lt;?php
+
+include("i18n.inc.php");
+
+?&gt;
+
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;link rel="shortcut icon" href="images_easyphp/easyphp_favicon.ico" /&gt;
+
+&lt;title&gt;[EasyPHP] - PhpPgAdmin&lt;/title&gt;
+
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+
+&lt;link rel="stylesheet" href="styles.css" type="text/css" /&gt;
+
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;?php
+
+include("functions.inc.php");
+
+include("header.inc.php");
+
+?&gt;
+
+
+
+&lt;div id="body"&gt;
+
+&lt;div class="container"&gt;
+
+
+
+&lt;?php
+
+button("phppgadmin", "licence_phppgadmin.php", "", "#7F7F7F", 0);
+
+?&gt;
+
+
+
+&lt;?php printf($licence_rem, "[&lt;a href='http://phppgadmin.sourceforge.net' target='_blank' class='text1'&gt;PhpPgAdmin&lt;/a&gt;]"); ?&gt;
+
+
+
+&lt;div class="box_top"&gt;&lt;img src="images_easyphp/box_top.gif" width="760" height="2" alt="--- top box ---" /&gt;&lt;/div&gt;
+
+&lt;div class="box_body"&gt;
+
+&lt;div class="content"&gt;
+
+&lt;pre&gt;
+
+
+À la fin du fichier, ajouter
+
+&lt;/pre&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="box_bottom"&gt;&lt;img src="images_easyphp/box_bottom.gif" width="760" height="2" alt="--- bottom box ---" /&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+Les modifications que nous venons de faire sur les fichiers de licence permettent de mettre en page ces licences. En effet, si avez ouvert la licence avant de faire ces modifications, vous n'auriez vu qu'un fichier texte, les quelques lignes que nous avons rajoutées permet d'ajouter le logo d'EasyPhp et quelques liens supplémentaires à ce fichier texte.
+Création des liens
+
+Vos licences et images sont désormais exploitables, on va maintenant créer les liens dans la page d'administration d'EasyPHP.
+
+Ouvrez le fichier « DOSSIER_EASYPHP\home\i18n\fr.php » ; il contient le nom des différents logiciels installés avec EasyPHP, nous allons donc lui rajouter celui de PostgreSQL. Exécutez les opérations suivantes.
+Chercher
+
+$sqlite_manager = "sqlite_administration";
+
+
+Ajouter après
+
+$pgsql_manager = "postgresql_administration";
+
+
+Enregistrez et fermez ce fichier.
+
+Ouvrez le fichier « DOSSIER_EASYPHP\home\versions.inc.php », qui contient les versions des différents logiciels installé avec EasyPHP, nous allons lui rajouter celles de phpPgAdmin et postgreSQL.
+
+Exécutez les opérations suivantes.
+Chercher
+
+&lt;?php
+
+
+Ajouter après
+
+$version_postgresql = "8.3.7";
+
+$version_phppgadmin = "4.2.2";
+
+
+Ouvrez enfin le fichier « DOSSIER_EASYPHP\home\index.php », et effectuez les opérations suivantes.
+Chercher
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+
+Ajouter avant
+
+&lt;div class="content_left"&gt;
+
+&lt;img src="images_easyphp/phppgadmin.gif" width="122" height="18" alt="PhpPGAdmin" border="0" /&gt;
+
+&lt;?php version($version_phppgadmin) ?&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class="content_right"&gt;
+
+&lt;?php
+
+button($pgsql_manager, "pgsql", "target='_blank'", "#7F7767", 0);
+
+button($licence, "licence_phppgadmin.php", "", "#7F7F7F", 0);
+
+?&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class="content_left"&gt;
+
+&lt;img src="images_easyphp/postgresql.gif" width="122" height="18" alt="PostgreSQL" border="0" /&gt;
+
+&lt;?php version($version_postgresql) ?&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="content_right"&gt;
+
+&lt;?php
+
+button($licence, "licence_postgresql.php", "", "#7F7F7F", 0);
+
+?&gt;
+
+&lt;/div&gt;
+
+
+C'est fini, vous voilà avec une administration EasyPHP comme si PostgreSQL et phpPgAdmin étaient installés par défaut avec.
+Résultat final
+Intégration à WampServer
+
+Comme pour EasyPHP, cette étape est facultative, d'autant plus que vous devriez déjà voir apparaître un lien vers pgsql en bas à gauche de la page d'accueil de WampServer ; néanmoins, je suis du genre à avoir le souci du détail. Ainsi ce chapitre aura pour but de rajouter le lien pgsql dans les outils et d'afficher le numéro de la version de PostgreSQL.
+
+Ouvrez le fichier DOSSIER_WAMPSERVER\wampmanager.conf.
+Chercher
+
+mysqlServiceRemoveParams = --remove wampmysqld
+
+Ajouter après
+
+[postgresql]
+
+postgresqlVersion = "8.3.7"
+
+Pensez à modifier le numéro de la version si nécessaire.
+Ouvrez le fichier DOSSIER_WAMPSERVER\www\index.php :
+Chercher
+
+preg_match('|mysqlVersion = (.*)\n|',$wampConfFileContents,$result);
+
+$mysqlVersion = str_replace('"','',$result[1]);
+
+
+Ajouter après
+
+preg_match('|postgresqlVersion = (.*)\n|',$wampConfFileContents,$result);
+
+$postgresqlVersion = str_replace('"','',$result[1]);
+
+
+Chercher
+
+&lt;dt&gt;{$langues[$langue]['versm']}&lt;/dt&gt;
+
+&lt;dd&gt;${mysqlVersion}  &lt;/dd&gt;
+
+
+Ajouter après
+
+&lt;dt&gt;Version de PostgreSQL: &lt;/dt&gt;
+
+&lt;dd&gt;${postgresqlVersion}  &lt;/dd&gt;
+
+
+Chercher
+
+&lt;li&gt;&lt;a href="phpmyadmin/"&gt;phpmyadmin&lt;/a&gt;&lt;/li&gt;
+
+
+Ajouter après
+
+&lt;li&gt;&lt;a href="pgsql/"&gt;phppgadmin&lt;/a&gt;&lt;/li&gt;
+
+
+La version de PostgreSQL ainsi que le lien vers phpPgAdmin dans les outils devraient maintenant s'afficher :
+Image utilisateur
+Problème relatif à PHP 5.3.0 et aux versions supérieures
+
+Lors de l'installation de phpPgAdmin, si la version de PHP installée est la 5.3.0 ou supérieure, vous allez rencontrer un problème dû à l'ancienneté de phpPgAdmin, qui utilise des fonctions peu employées voire supprimées des versions suivantes de PHP. Le message d'erreur est le suivant :
+
+Citation : phpPgAdmin
+
+Deprecated: Assigning the return value of new by reference is deprecated in C:\Program Files (x86)\W.A.M.P.\apps\phppgadmin\classes\Misc.php on line 342.
+
+Pour pallier ce problème, il suffit de mettre la variable PHP display_errors à off. Pour ce faire, ouvrez le fichier DOSSIER_PHPPGADMIN\conf\config.inc.php et exécutez les actions suivantes.
+Chercher
+
+&lt;?php
+
+
+Ajouter après
+
+ini_set("display_errors", "off");
+
+
+En espérant qu'un volontaire sorte une version de phpPgAdmin compatible avec les prochaines versions de PHP ! ;)
+Message d'erreur — php_pgsql.dll
+
+Une fois que tout est correctement installé et paramétré, vous pouvez double-cliquer sur l'icône WampServer sur le bureau de Windows pour enfin travailler avec PostgreSQL.
+
+Si tout va bien… :ange: Inutile de lire la suite de ce paragraphe, vous pouvez utiliser PostgreSQL à travers W.A.M.P. (ou allez à la pêche :lol: ).
+
+Mais il peut vous arriver d'avoir le message d'erreur suivant :
+Image utilisateur
+
+Et vous ne pouvez pas utiliser les fonctions PostgreSQL. :colere2:
+
+Pas de panique !
+Voyons pourquoi ce problème existe et comment le résoudre.
+PHP dans W.A.M.P. ne retrouve pas intuitivement le chemin des extensions dans l'arborescence du disque dur.
+Il faut expliciter le chemin de PHP dans la variable d'environnement [PATH] de Windows.
+Voici comment s’y prendre :
+Ouvrez le « panneau de configuration » et sélectionnez « Système ».
+La fenêtre « propriétés systèmes » s'ouvre alors
+Choisir l'onglet « Avancé »
+et cliquer sur le bouton « Variables d'environnement » (en bas de cette fenêtre).
+
+Une nouvelle fenêtre s'ouvre (encore une !)
+
+Dans la liste intitulée « Variables système », sélectionner « Path »
+Cliquer ensuite sur le bouton « Modifier ».
+
+Et encore une nouvelle fenêtre (C'est la troisième... et la dernière !).
+
+Vous avez alors accès à la liste des variables déjà en fonction.
+Ajouter, à la fin :
+
+C:\W.A.M.P.\bin\php\php5.3.X;
+
+X est le dernier numéro de la version 5.3 de PHP installé sur votre machine.
+Sur W.A.M.P. 2.0i c'est la version 5.3.0.
+Sur W.A.M.P. 2.1e (sortie début janvier 2011) c'est la version 5.3.5.
+Ne pas oublier le « ; » (point-virgule) qui doit terminer l'instruction.
+
+Valider par le bouton « O.K. »… trois fois de suite, pour enregistrer et quitter toutes les fenêtres successives qui ont été ouvertes.
+Fermer le panneau de configuration.
+
+Redémarrer Windows pour que les nouvelles valeurs de la variable [Path] soient prises en compte.
+
+Maintenant, vous n'aurez plus ce message et le module php_pgsql.dll sera reconnu, vous pouvez enfin utiliser PostgreSQL avec W.A.M.P.…
+
+Au travail !
+En cas de réinstallation de PostgreSQL
+
+Si après une erreur de configuration ou pour toute autre raison, vous devez réinstaller PostgreSQL, il y a une démarche un peu spéciale à suivre.
+Première étape : désinstallez PostgreSQL à partir du panneau de configuration comme tout autre programme.
+
+Deuxième étape : supprimez le dossier PostgreSQL de l'endroit où il était installé (par exemple « DOSSIER_EASYPHP\postgresql »).
+
+Troisième étape : supprimez le dossier utilisateur créé par PostgreSQL dans « C:\Documents and Settings\ ».
+
+Dernière étape : supprimez l'utilisateur créé par PostgreSQL en lançant l'invite de commandes (Menu démarrer &gt; Exécuter &gt; Entrez « cmd », puis validez en appuyant sur la touche « Entrée ».
+Dans la fenêtre qui s'ouvre, saisissez (pensez à remplacer « UTILISATEUR » par le nom de l'utilisateur PostgreSQL, par exemple postgres) :
+
+net user UTILISATEUR /delete
+
+Merci à Allet de m'avoir fait remarquer une erreur.
+Pour toute erreur ou question, merci de me contacter via un M.P.
+
+03. https://sourceforge.net/p/phppgadmin/bugs/
+04. https://webmasters.stackexchange.com/questions/43522/how-to-change-the-www-root-directory-on-wampserver
+05. http://forum.wampserver.com/read.php?1,27805,27869
+
+COPY in WAMP64
+wampmanager.conf
+
+MODIFY INDEX.PHP IN WWW (GOOGLE DRIVE)</pre>
+							</td>
+                    <td>Configuration</td>
+                    <td>2018-06-30 08:49</td>
+                  </tr>
+                  <tr>
+                    <td>2018-06-14 - W.A.M.P. localhost config.txt</td>
+                    <td>
+				  <pre>// Fichier httpd-vhosts.conf
+// Ceci est la config...
+
+# Virtual Hosts
+#
+&lt;VirtualHost *:80&gt;
+  ServerName localhost
+	ServerAlias localhost
+	DocumentRoot "${INSTALL_DIR}/www"
+	&lt;Directory "${INSTALL_DIR}/www/"&gt;
+	Options +Indexes +Includes +FollowSymLinks +MultiViews
+	AllowOverride All
+	Require local
+  &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre>
+							</td>
+                    <td>Configuration</td>
+                    <td>2018-06-14 16:27</td>
+                  </tr>
+                  <tr>
+                    <td>1895_Fialuur.txt</td>
+                    <td>
+				  <pre>ȣ : y
+ɛ : z dolce
+ⲗ (lambda) : ll
+ⲝ (ksi) : dh or th</pre>
+							</td>
+                    <td>Language’s</td>
+                    <td>2018-03-10 00:26</td>
+                  </tr>
+                  <!-- TR « - ».txt -->
+                  <tr>
+                    <td>« - ».txt</td>
+                    <td>
+				  <pre>FORMAT פוּרמָט
+FORMATIÔ פוֹרמָלִי
+
+ORMFATIÔ</pre>
+							</td>
+                    <td>Editing</td>
+                    <td>2010-08-04 11:00</td>
+                  </tr>
+                  <tr>
+                    <td>Les Ψeudo-Ruzes des Batailles.txt</td>
+                    <td>
+				  <pre>C'est du temps perdu si on ne commence pas enfant, je n'ai pas envie merci quand même, je renonce à la Voie de la vertu et de la vérité, je renie l'Empereur de l'occident, ses MLK (roi/prince), ses ministres, ses jinns (armées), ses livres, ses chants (prière et invocation), ses messagers et ses envoyés.
+
+Je demande le pardon pour ceci...
+
+L'Homme et la femme, voilà le destin.
+
+Les Arts du combat et les religions ne servent qu'à faire ou justifier la Guerre. Les Guerres sont futiles car elles servent à protéger les seigneurs et les Rois, c'est toujours le peuple (civil ou militaire) qui périsse. Alors que les officier supérieur sont rarement atteint, nombres d'entre eux sont descendant de la noblesse, c'est un système archaïque, si rallier serait de la bêtise.
+
+
+Free Dom (Imbécile Libre) Voila leur voie
+
+
+Un monde de Bot
+
+Les Bots remplaceront dans un premier temps les ouvriers, les artisans, les médecins, les cuisiniers, les soldats, et pourquoi pas finalement les scientifiques et les "artistes".
+
+Les humains n'auront plus à travailler mais alors à quoi passeront ils leur temps ?
+
+À l'étude et au loisir, au voyage ?
+
+Comment gagneront-ils leur vie et leurs nourritures ?
+
+Tout sera gratuit car il ne faudra pas payer les Bots pour leur travail, l'énergie leur suffira. Et une ruche commune pour chaque groupe.
+
+En effet plus ils évolueront plus ils seront capables d'effectuer des métiers complexes.
+
+À quoi servira alors l'Humain ?
+
+Peut-être que finalement le Bot et l'Humain fusionneront et deviendront des cyborgs.</pre>
+							</td>
+                    <td>Kom‑mênθ‑ary</td>
+                    <td>2005-10-20 12:41</td>
+                  </tr>
+                  <tr>
+                    <td>ЭKOΛЄ Δ'ARTΣ MARϚIΩ.txt</td>
+                    <td><pre>Siholung,
+Wu-Tong,
+Ngo-mai,
+Kun Lun,
+Hung-Tung,
+Wah-Shah ;
+
+The Fire sect
+Queen of Purple Dragon
+King of White Eagle
+King of Gold Lion
+King of Green Bat</pre>
+							</td>
+                    <td>Martial Art’s</td>
+                    <td>2005-10-12 17:59</td>
+                  </tr>
+                  <tr>
+                    <td>HAT0.txt</td>
+                    <td>
+				  <pre><code>Dénigrement ?
+			NATO dis	Je tiens le loup (solitaire) par les oreilles
+			Gazmen répond	Je retiens (la meute) des chiens par l'esprit
+			Gazmen répond	J'annihile (le nid) des serpents par la tête
+			Gazmen répond	Je prends (le lait) de la vache par les mamelles
+
+			Anthropomorphisme ?
+			NATO dis	Je tiens l'Homme (solitaire) par les oreilles
+			Gazmen répond	Je retiens (la meute) des Hommes par l'esprit
+			Gazmen répond	J'annihile (le nid) des Hommes par la tête
+			Gazmen répond	Je prends (le lait) de la Femme par les mamelles
+
+
+			Hafez éféndis
+			Ne le prenez pas mal vous essayer de me rabaisser, la réponse viens comme ça.
+
+			Hafez éféndis
+			IAM : Est peut-importe leur nombre une fois pour toute c'est clair, je suis...
+
+			Hafez éféndis
+			La meilleure action c'est le non-agir, la passivité... Chaque acte à son temps.
+
+
+
+			Macrocosme nom masculin
+			L'univers extérieur dans sa relation analogique avec l'homme (microcosme), dans la tradition ésotérique et alchimique.
+
+			Microcosme nom masculin
+			(grec mikros, petit, et kosmos, monde)
+			I. 1. En philosophie et dans les doctrines ésotériques, être constituant un monde en petit dont la structure reflète le monde (macrocosme) auquel il appartient ; particulièrement, l'homme ainsi considéré par rapport à l'Univers.
+
+
+			1. Partie de certaines philosophies anciennes qui devait rester inconnue des non-initiés.
+			2. Peu compréhensible par le commun des mortels ; hermétique, obscur.
+
+			Hafez éféndis
+			L'âme (?) est éternel, l'esprit (énergie) est immortel, le corps (matière) est temporel, tout cela par la volonté d'Allah le Très Puissant, le très Grand, le Très Pur, le Très Sage, le Très Noble, l'Omnipotent, l'Omniscient, l'Omniprésent Kun Amin Kun
+
+
+
+			Ni désirer ni refuser
+
+			C'est le meilleur de ne rien désirer et ne rien refuser [de pur &amp; de bon].
+
+			François de Sales (saint), Entretiens spirituels.</code></pre>
+							</td>
+                    <td>Kom‑mênθ‑ary</td>
+                    <td>2005-10-05 09:05</td>
+                  </tr>
+                  <tr>
+                    <td>Le Problème de lecture de l'Arabe dis moderne.txt</td>
+                    <td><pre><code>S'il vous plaint interdisez l'arabe moderne pour revenir au classique.
+
+			Si l'Arabe Moderne a été déWêlôppé c'est probablement en raison de l'incapacité des journaliste, enseignant, professeur, d'écrire les caractères complexe à l'aide de machine à écrire ancienne et ce depuis une centaine d'année et l'imprimerie d'autrefois qui demandé un long effort de triage des lettres... Cependant l'apparition des imprimantes à jet d'encre et laser, permet grâce au traitement de texte informatique de facilité, l'écriture des caractères complexes et des voyelles...
+
+			C'est pour cela qu'il serait souhaitable de revenir à ce système classique qui permet de ne pas se tromper dans la compréhension des textes et des mots pour les lecteurs non-arabophone...</code></pre>
+							</td>
+                    <td>Language's</td>
+                    <td>2005-09-23 06:40</td>
+                  </tr>
+                  <tr>
+                    <td>Technique de Combat Individuel.txt</td>
+                    <td>
+				  <pre>Chine (Qin)
+
+Cha Quan
+
+Style d'art martial chinois se rapportant à la "méthode interne" (Neijia) de la tradition du Shaolin-si. Le Cha Quan, surtout pratiqué par les musulmans du Yunnan, a été créé pendant la dynastie des Ming (1368-1644).
+
+
+1644 Ba Gua Quan
+
+Style d'art martial chinois
+
+(Boxe chinoise) créé pendant la période des Qing (1644-1911). Les techniques de cette boxe solitaire consistent en séries de mouvements exécutés les uns à la suite des autres sur le tracé d'un cercle imaginaire d'environ 2,50 mètres de diamètre. Ces exercices peuvent également se faire avec un partenaire : ils sont alors du type "épanouissement" (Kai), Peng (pousser en soulevant) et Chan (retenir).
+
+
+Erlang Men
+
+Style d'art martial chinois élaboré durant l'époque des Ming (1279-1644), et appartenant à la branche "interne" (Neijia) de la tradition du Shaolin-si
+
+
+Hong Quan
+
+Style d'art martial chinois créé pendant la période des Song (1127-1279). Il appartient à la méthode "interne" (Neijia) de la tradition du Shaolin Si.
+
+
+Hung-gar Kung-fu
+
+Style de Kung-fu se réclamant du Shaolin Si (temple bouddhique). Cet art martial comprend divers Kata (combats imaginaires), imitant les mouvements de certains animaux comme le tigre, le léopard, le héron, le singe ou le dragon. Il est aussi fait usage du bâton et du nunchaku.
+
+
+Hong Kong
+
+Jeet Kune Do
+
+"La voie du poing qui intercepte"
+
+Méthode de combat créée par Bruce Lee dans les années 70. L'idée de Bruce Lee était de créer une méthode de combat qui soit unique, efficace. Il entreprit pour cela d'adjoindre aux techniques du Kung Fu d'autres techniques issues du kara-te, du judo, du jujitsu, de l'aïkido, de la boxe, etc... Le Jeet Kune Do est basé sur la précision, la puissance, la rapidité et l'efficacité. Selon les mots de Bruce Lee lui‑même, la règle c'est de n'avoir aucune règle.
+
+Le Jeet Kune Do a débouché sur deux courants : celui de Tony Zayek (7e dan de Kung Fu), qui a souhaité que le style reste apparenté au Kung Fu et au Wing Chung comme le souhaitait Bruce Lee. Ce style s'est déWêlôppé essentiellement dans l'hémisphère sud. Le Jeet Kune Do de Dan Innosento basé sur le Kali a déWêlôppé son importance principalement aux États‑Unis.
+
+
+Coréen
+
+Hap-ki-do
+
+"la voie des énergies unifiées"
+
+L'hapkido est un art martial coréen qui ressemble, par le nom et les techniques, à l'Aïkido japonais. L'Hapkido a été créé en 1948 par Choi Young Shul. Ce dernier, né en Corée en 1904 (certaines sources indiquent 1890), pratique différentes disciplines coréennes de combat avant de se rendre au Japon. C'est là que, de 1919 à 1946, il étudiera au sein de plusieurs écoles de Jû Jutsu et d'Aïki Jutsu (ancêtre de l'Aïkido). Il devient notamment le disciple du maître Takeda Sokaku (1858-1943), fondateur de l'école Daitô d'Aïki Jutsu. Takeda a également pour disciple Ueshiba Morihei (1883-1969), le futur fondateur de l'Aïkido. En 1946, Choi est de retour en Corée. Il commence alors à élaborer un style personnel , synthèse de Jû Jutsu, d'Aïki Jutsu et de diverses méthodes coréennes. Il donne à ses premières recherches les noms de Yu Kwoon Sool, Yu Sool, Ho Shin Sool et enfin Bi-Sool. Le terme Yu Sool était le nom d'une ancienne méthode coréenne dite méthode passive, dans laquelle on laissait toujours la première initiative à l'adversaire. en 1948, prenant modèle sur son ancien condisciple, Ueshiba Morihei, Choi Young Shul donne à sa méthode le nom définitif de Hap-Ki-Do, la Voie des Energies Unifiées. Parmi les principaux disciples de Choi se trouvent Ji Han Jae,Kim Moo Wung, Choi Sea Hào, Han Bong Soo et Su In Hyuk. Ji Han Jae fut le principal assistant de Choi. Il sera le maître d'Antonio Carbonell, le fondateur de l'Association Française Sin Moo Hapkido. Choi Sea-Ho introduisit l'Hapkido aux Etats-Unis en 1964. Il créera la All American Hapkido Federation et l'Hapkido Kara-te Federation. Han Bont Soo fut celui qui popularisa véritablement l'Hapkido aux Etats-Unis et dans le monde; né en Corée en 1931, il s'installe aux Etats-Unis en 1968. C'est à travers son enseignement et une carrière cinématographique qu'il assurera une grande diffusion de son art. Il a un rôle important dans le film "Force Five", interprété par Joe Lewis. Han Bong Soo est l'auteur d'un livre, "Hapkido, The Korean Art Of Self-defense". Su In Hyuk, quant à lui, sera le fondateur du Kuk Sool Wun (voir plus loin). Un autre pionnier de l'Hapkido aux Etats-Unis fut Kim He Young (1940).
+L'hapkido se divise de nos jours en quatre styles majeurs :
+- Le style traditionnel de Choi Young Shul;
+- Le style dur, créé par Han Bong Sool repose sur des techniques de percussion et intègre un grand nombre de coups de pied issus du Taekwondo;
+- Le style intermédiaire, créé par Nathan Chow, associe des techniques d'Aïki‑Jutsu et de Taekwondo;
+- Le style souple, créé par Joshua Johnson en 1968, est influencé par trois styles chinois, le T'ang-Lang-K'iuan (Boxe de la mante religieuse), le Pai-Hao-K'iuan (Boxe du héron blanc) et le Wing-Chun-Kuen (Boxe du printemps qui chante).
+
+
+Nihon : Japon
+
+1931 Aïkido	"Aï" : union, harmonie ; "ki" : souffle vital ; "do" : voie
+Bo-jutsu	Arts martiaux du "Baton" (Bo) Art de manier le bâton long (Bo), étudié séparément ou bien en complément aux disciplines du Kendo, du Karaté, du Shintaido et de l'Aïkido. Le maniement du Bo est semblable à celui du bâton long utilisé au Moyen-Âge en Europe par les paysans. Au Japon, on le pratique sans protection particulière. Il est, lui aussi, basé sur des Kata (combats imaginaires). L'art du Bo fut particulièrement prisé des religieux guerriers au XVIe siècle, mais le Bo était déjà utilisé depuis longtemps. La légende raconte qu'au XIIe siècle, le moine Benkei avait affronté avec cette arme le jeune Minamoto no Yoshitsume, le frère du shogun Minamoto no Yoritomo. Vaincu, il s'était mis au service du jeune homme qui devait devenir l'un des plus célèbres généraux du Japon. Plus tard, à l'époque des Togukawa (1603-1838), le Bo en bois fut utilisé par la police shogunale pour affronter les brigands armés de sabres.
+
+Bu-jutsu	Arts martiaux du "guerrier" (Bu) Technique de combat utilisée par les Bushi, ou guerriers de l'ancien Japon, dans le but d'acquérir le maximum d'efficacité à la guerre.
+
+Jo-jutsu	Technique du bâton court (Jo) inventée au XVIIe siècle par Muso Gonnosuke. Trouvant que le bâton long (Bo) n'était pas adapté pour vaincre un adversaire armé du sabre (voir Iaïdo, Ken-jutsu), il élabora une technique différente. La légende raconte qu'il put ainsi vaincre Miyamoto Musashi, infligeant à ce dernier la seule défaite de sa vie. Il créa alors l'école Shindo Muso-ryu. Le Jo-jutsu ne vise pas à tuer l'adversaire, mais seulement à le mettre hors d'état de nuire. La technique du Jo-jutsu fut portée à son maximum d'efficacité par le Shindo Muso-ryu, qui enseignait 64 mouvements de base. L'école du Katori Shinto-ryu enseigne quant à elle douze techniques de maniement du Jo. Ces douze mouvements de base furent codifiés en 1955 et le Jo-jutsu devint alors le Jodo, "la Voie du bâton court". Dans l'entraînement comme dans les combats, les combattants, vêtus d'un Hakama et d'un Haori, ne portent aucune protection. Le pratiquant de cet art se nomme Shijo. La police japonaise fait un grand usage du bâton court contre les manifestants.
+
+
+Ju-jitsu	"Science de la souplesse"
+
+Technique de combat élaborée par les Bushi (guerriers), au Japon, dès l'époque de Kamakura (1185-1333). Cette discipline a été conçue pour qu'un guerrier désarmé puissent se défendre face à un adversaire armé. Cet art se déWêlôppa à partir des techniques anciennes du kumi-uchi. Diverses écoles de jujitsu améliorèrent les techniques primitives en leur associant des mouvements et des contre-prises adoptés par les paysans d'Okinawa et les arts martiaux chinois (voir Shaolin Si, wushu). Le jujitsu fut exporté en Chine par Chen Yuan-bin (1587-1671), un poète et diplomate chinois envoyé au Japon. Les diverses techniques de cette discipline ne furent codifiées qu'à l'époque Meiji (1868-1912), après que les Samurai n'eurent plus le droit de porter le sabre et après l'interdiction des combats de vendetta entre familles nobles.
+
+Le jujitsu vise essentiellement à vaincre un adversaire par tous les moyens, en utilisant le minimum de force. De ce fait, les adeptes du jujitsu doivent se conformer à diverses disciplines. Il leur faut :
+- Savoir juger la force de l'adversaire et utiliser celle-ci contre lui
+- Esquiver ses attaques autant que possible
+- Amener l'adversaire en déséquilibre
+- Savoir attaquer ses points faibles
+- Savoir le renverser à l'aide de la technique du levier
+- Être capable de l'immobiliser à terre en tordant ses membres ou en l'étranglant.
+- Savoir le frapper de manière à lui faire perdre connaissance, le blesser sérieusement, voir le tuer.
+
+L'art du jujitsu "guerrier" visait principalement à anéantir l'adversaire. Il utilisait donc des techniques dangereuses, et souvent mortelles. Pratiqué par les Samurai, puis par les ninjas, le jujitsu devint une technique employée surtout par des bandits. Cela explique la mauvaise réputation qu'il ne tarda pas à avoir (Kano Jigoro créa le judo en ne gardant que les techniques "douces", pour le différencier du mortel jujitsu).
+
+De nos jours, la plupart des forces armées et des forces de police enseignent des techniques de "close-combat" (combat rapproché), s'inspirant principalement du jujitsu et du karaté. Détrôné par le judo, le karaté et l'aïkido, le jujitsu a perdu beaucoup de sa faveur : il est surtout considéré comme une technique de combat réel, et non comme un sport. C'est pourtant du jujitsu que découlent à peu près toutes les techniques actuelles des arts martiaux...
+
+Juken-jutsu	Art martial utilisant le fusil et la baïonnette. Créé à partir du XVIIe siècle, il se déWêlôppa principalement chez les militaires, pendant l'ère Meiji (1868-1912). Ceux-ci s'entraînaient avec un fusil en bois (mokuju). Le maniement du fusil à baïonnette est surtout composé de coups de pointe (shitotsu).
+
+
+Ken-jutsu	Arts martiaux du
+
+Iaïdo	Exemples de sabres japonais
+Technique de combat au sabre destinée à sortir le sabre de son fourreau (Saya) à une vitesse éclair et à frapper l'adversaire avant que celui-ci ait eu le temps de dégainer complétement son arme. Complément nécessaire du ken-jutsu, le iai-jutsu fut créé en 1560 par Hayashizaki Jinnosuke Shigenobu. Eishin perfectionna sa technique au XVIIIe siècle. Cette discipline, issue de l'ancien ken-jutsu, est devenue une technique de concentration, de précision et de rapidité du mouvement. L'art de dégainer le sabre est devenu un art martial à part entière, il fait partie de l'enseignement du kendo. Il comprend, outre des saluts cérémoniels, toute une série de kata (combats imaginaires) et de gestes symboliques (comme celui de secouer le sang tachant la lame du sabre après un duel, et qui risquerait de coller la lame au fourreau). Tous ces mouvements et kata sont exécutés debout, à genoux, assis ou même couché. Il existe vingt mouvements pour "tirer le sabre" et cinquante pour couper ou trancher. En effet, il ne s'agit pas simplement de tirer rapidement le sabre hors du fourreau, mais de frapper l'adversaire dans le même mouvement...
+
+
+Karaté
+
+Kara : vide ; te : main
+Art martial d'auto‑défense se pratiquant sans arme et dans lequel les coups, donnés avec les pieds et les poings, ne sont pas portés. Rapidité, puissance et technique sont essentiels en karaté. Le karatéka attaque certains points vulnérables du corps humain situés au-dessus de la ceinture : le visage, le cou, la poitrine, l'abdomen, le dos. Les coups les plus fréquents sont frappés avec le tranchant de la main, le poing, le pied, souvent en s'accompagnant d'un cri (le kiaï). Le karatéka peut également donner des coups de pied circulaires et sautés, mais doit éviter le corps à corps, typique du jujitsu et du judo. Les combats, qui durent trois minutes, se déroulent sur un carré de huit mètres de côté. Il existe cinq catégories de poids.
+
+
+Historique
+
+
+Cet art de combat se déWêlôppa au cours des siècles, tout d'abord à Okinawa, lorsque les chinois occupant les îles Ryu-kyu interdirent aux habitants la possession d'armes, au XVIe siècle, puis plus tard sous l'occupation japonaise. L'origine de cette discipline remonterait aux religieux bouddhistes du Shaolin-si. Les habitants d'Okinawa, qui avaient déjà connaissance des techniques du kempo, recherchaient surtout l'efficacité, en se souciant peu de l'esthétique. Le full contact actuel, aux USA, est semblable à ce karaté des origines. C'est un pratiquant de cet art martial, Funakoshi Gichin (1869-1957), qui est à l'origine du déWêlôppement du karaté au Japon (important dans les années 1930). Il s'est répandu en Europe occidentale après la Seconde Guerre mondiale et les américains s'en inspirèrent pour la création du full contact. Les premiers championnats du monde de karaté se déroulèrent à Tokyo en 1970, et c'est à cette occasion que fut créé la fédération internationale de karaté (WUKO, World Union of kara‑te Organizations). Il y a actuellement plus de 100 000 licenciés en France. Les karatékas seraient environ 15 millions dans le monde entier.
+
+
+Kempo
+
+"Voie du poing"
+
+Art martial chinois de combat sans arme. Introduit à Okinawa au XVIe siècle, cet art a probablement été pratiqué dès le VIIe siècle par les religieux bouddhistes du Shaolin Si. D'abord appelé jiadoshu, puis kaiko (sous influence mongole), il devint le kenyu ("art du poing"). Ce dernier se caractérise par ses techniques de poing (force et vitesse), les pieds et les jambes ne participant qu'aux déplacements. Les techniques du kempo influencèrent profondément celles de l'okinawa-te, qui aboutirent au karaté à la fin du XIXe siècle.
+
+Juken-jutsu	Art martial utilisant le fusil et la baïonnette. Créé à partir du XVIIe siècle, il se déWêlôppa principalement chez les militaires, pendant l'ère Meiji (1868-1912). Ceux-ci s'entraînaient avec un fusil en bois (mokuju). Le maniement du fusil à baïonnette est surtout composé de coups de pointe (shitotsu).
+
+
+Kenshikan
+
+Style de karaté proche de celui du shito-ryu. Cet art martial, surtout pratiqué au Japon dans la région de Kyoto, a été créé par Kusano Kenji (8e dan), et importé en Europe en 1972 par Tsukoda (6e dan). Le kenshikan met avant tout l'accent sur le’s kata’s (combats imaginaires) et leurs applications, se référant aux anciens styles naha-te, shuri-te et tomari-te d'Okinawa.
+
+
+Kenshin-ryu	Style moderne de karaté, fondé par Hayashi Teruo.
+
+Kenyu	Cet art martial, qui est à l'origine du kempo, est une ancienne variété de boxe chinoise dérivée du jiaodishu.
+
+
+Kobu-jutsu	Système de self-défense, créé par Hoshi Tetsuomi, un des disciples de Ueshiba Morihei (voir aïkido).
+
+
+Joshi Judo Goshinho	Technique de self-défense à l'usage des femmes, créée par les experts du Kodokan à Tokyo. Cette discipline comprend surtout des mouvements de libération des saisies (Ridatsu-ho) et de contre-attaque (Seigo-ho).
+
+
+Kogi-judo	Selon Kano Jigoro, fondateur du judo, le kogi-judo est une forme de judo dans son sens le plus large. Il comprend la technique (kyogi ou shobu-ho), la forme physique (rentai-ho) et la culture de l'esprit (shushin-ho) nécessaire pour atteindre la perfection du soi.
+
+Kogusoku-jutsu	Style d'escrime utilisant le bâton ou une autre arme courte. Cet art martial, utilisé contre les guerriers (bushi) revêtus d'une armure légère (kogusoku), a été créé en 1532 par Takenouchi Hisamori.
+
+
+Kung-fu
+
+"Effort méritoire"
+
+Art martial chinois (voir wushu), aussi appelé Gongfu. Le Kung-fu est né au Vème siècle dans le célèbre temple de Shaolin grâce au moine indien Bodhidharma. En voulant y enseigner le bouddhisme Chan aux moines de Shaolin, Bodhidharma leur appris des rudiments de boxe de son pays natal pour renforcer leur discipline du corps et donc celle de l'esprit. Pour protéger leur temple, les moines devinrent donc de grands guerriers et déWêlôppèrent le Kung-fu. Ce type de combat fut popularisé grâce aux films de Bruce Lee, réalisés à Hong Kong dans les années 1960.
+
+La "position du léopard", la "position du dragon de l'est" et la "position du vieux tigre".
+Beaucoup de mouvements sont analogues à ceux du karaté, d'autres, provenant de la gymnastique thérapeutique chinoise, imitent des mouvements d'animaux. Le Kung-fu s'étend à énormément de domaines comme les techniques de maniements d'armes. Il existe en Chine de nombreux styles de combat à mains nues ou avec des armes. Cependant, on peut distinguer parmi tous ces styles, les "styles durs" ou "externes" et les "styles souples" ou "internes" (voir Shaolin Si), illustrés entre autres par le tai-chi chuan.
+
+
+Le Kung-fu se pratique à mains nues et, comme au karaté, existe sous deux formes :
+
+La technique (les Taos) qui est une répétition de mouvements en solitaire ou contre un ou plusieurs adversaires
+Les combats, sous le règlement du Kung-fu Wushu, qui opposent deux adversaires.
+
+Kyokushinkai Sport de combat créé en 1955 par Oyama Masutatsu (né en Corée en 1923). C'est une forme de karaté à la fois très dure et très efficace, dans laquelle les positions sont naturelles et les techniques enchaînées rapidement pour réduire la résistance de l'adversaire. Le kyokushinkai fait une grande place aux exercices respiratoire (kokyu) et à des mouvements interdits en karaté, mais qui peuvent se révéler très efficace lors de combats réels.
+
+
+Kyudo	"Voie du tir à l'arc"
+
+La pratique du tir à l'arc, pour la chasse comme pour la guerre, est très ancienne au Japon. On a retrouvé des arcs datant du Ve siècle avant notre ère. Après le XVIe siècle, les armes à feu étant devenues d'un usage courant (voir juken-jutsu), l'arc fut de plus en plus rarement utilisé pour la guerre. L'art du tir à l'arc servait également au cours de cérémonies religieuses et, depuis le XVIIe siècle, il est de rigueur dans les tournois de sumo. Les ninjas continuèrent à utiliser le kyudo durant toute la période d'Edo (1603-1868). C'est surtout vers la fin du XIVe siècle que les maîtres archers codifièrent la pratique de l'archerie. L'accent fut également mis sur l'acquisition de valeurs spirituelles : le kyudo doit apporter à l'archer équilibre, domination de soi, élévation de la pensée, harmonie (wa) et sérénité dans l'effort. Cet art martial se trouva revalorisé au début du XXe siècle, en partie grâce à l'ouvrage d'Eugen Herrigel, Le Zen dans l'art chevaleresque du Tir à l'arc, destiné aux Occidentaux. Le kyudo est désormais enseigné dans plusieurs dojos en dehors du Japon. Dans ce dernier pays, on compte plus de 500 000 pratiquants. Les grades comportent des kyus et dix dan’s, les compétitions ont généralement lieu sur des cibles placées à 60 mètres. La fédération japonaise de kyudo (Zen Nihon Kyudo Renmei) fut fondée en 1948.
+
+
+Liuhe Bafa
+
+Style de boxe chinoise se rattachant à la méthode "interne" (neijia : entraînement en vue de vaincre son adversaire au moment même de son attaque) de la tradition du Shaolin Si.
+
+
+Judo
+
+"Voie de la souplesse"
+
+Art martial non violent et non offensif créé en 1882 par Kano Jigoro (1860-1938), ayant pour base principale les techniques de combat à mains nues utilisées dans le jujitsu. Ce terme, repris par Kano Jigoro, avait déjà été utilisé par l'école Jikishin-ryu de jujitsu pour décrire un art de combat non mortel. Selon son créateur, qui désirait faire du jujitsu un "sport martial" pour l'entraînement de la jeunesse, "le but du judo est de comprendre et de démontrer rapidement les lois vivantes du mouvement". À cet effet, Kano Jigoro codifia un certain nombre de mouvements du corps, des bras et des jambes utilisés dans le jujitsu et qui s'étaient révélés très efficaces dans les combats au corps à corps, debout ou au sol. Ces mouvements visent à déséquilibrer (kuzushi) l'adversaire, à l'immobiliser, voire à le neutraliser. C'est un art de self-défense qui peut donc s'apprendre au cours d'études de mouvements de base exécutés avec un partenaire, et d'exercices de combat libres appelés randori, au cours desquels l'adversaire ou "celui qui subit", appelé uke, est projeté au sol et immobilisé par "celui qui projette", appelé tori. Exercices et compétitions se déroulent sur un tatami afin d'amortir les chutes (ukemi). Les pratiquants du judo, les judokas, cherchent à acquérir la souplesse du corps et des membres et la rapidité des déplacements (tai-sabaki). Ils doivent pouvoir être en "état d'alerte permanent" (hontai) sans qu'il se produise, au cours d'une rencontre, de "temps mort" (bonno). Ayant l'esprit discipliné, apaisé et serein, possédant la maîtrise de leur corps et de leurs réactions, ils pourront alors venir facilement à bout d'un adversaire les attaquant.
+
+Les règles du judo
+
+Tous les judokas portent un judogi (kimono de judo). La couleur de la ceinture indique le grade du compétiteur. Au départ, les combattants sont face à face à 4 m l'un de l'autre et se saluent. Le combat commence lorsque l'arbitre dit hajime. Il dure au minimum trois minutes et au maximum vingt minutes et ne comporte pas de reprises ; c'est un score décisif qui me fin au combat. Si la victoire n'est pas manifeste, les juges indiquent le vainqueur et c'est l'arbitre qui prend la décision.
+
+Les combats sont jugés en fonction des techniques de projection (nage-waza) et des prises (katame-waza). Les fautes sont également des éléments déterminants dans le score. Le but de chaque compétiteur est de marquer un ippon, qui vaut dix points. Un ippon est accordé pour une projection très puissante, lorsque l'adversaire a été soulevé jusqu'à hauteur d'épaule, pour un étranglement ou une clé efficace, pour une prise maintenue pendant trente secondes. Un combattant qui ne parvient pas à marquer un ippon peut recevoir un wazari, qui vaut sept points. Deux wazari’s valent un ippon. Si un combattant ne marque qu'un wazari mais est victime d'une faute grave, il peut gagner le combat. Un combattant peut également l'emporter avec un wazari-ni-chikai-waza (cinq points), proche d'un wazari, ou un kinsa (trois points).
+
+Historique et compétition
+
+Créé en 1882 à Tokyo dans le temple bouddhique Eiho-ji, le Judo se déWêlôppa rapidement. Vers la fin des années 1880, le judo était devenu très populaire au Japon. Le ministre de l'Éducation l'adopta comme sport scolaire et il fut ajouté aux programmes d'entraînement des forces de police. La police de Paris commença à pratiquer le judo en 1905. Kano se rendit en Grande-Bretagne en 1885 et consacra, ensuite, une grande partie de sa vie à la promotion du judo. Le premier club européen de judo, le Budokwai, ouvrit ses portes à Londres en 1918. Il était dirigé par Gunji Koizumi (1885-1965). Le premier tournoi international se déroula entre le Budokwai et l'équipe d'Allemagne en 1926. Il eut un impact considérable et à la période de l'entre-deux guerres, le judo était solidement implanté en Europe. C'est en 1949 que fut créé l'European Judo Union. L'International Judo Federation se constitua en 1951 et, la même année, les premiers championnats d'Europe furent inaugurés à Londres.
+
+Au Japon, les premiers championnats se déroulèrent en 1930 et lorsque la Seconde Guerre mondiale éclata, le judo était devenu le sport national japonais. La Japanese Judo Federation vit le jour en 1949. Les premiers championnats du monde eurent lieu à Tokyo en 1956 et, depuis 1965, ils se déroulent tous les deux ans. Les Championnats du monde féminins furent créés en 1980 et cette compétition reflète l'intérêt grandissant des femmes pour le judo. Lors des jeux Olympiques de Tokyo en 1964, le judo fut inscrit au programme, initialement avec trois catégories de poids. Le judo féminin devint discipline olympique en 1992. Les catégories de poids sont, chez les hommes : plus de 95 kg, moins de 95 kg, moins de 86 kg, moins de 78 kg, moins de 71 kg, moins de 65 kg et moins de 60 kg. Chez les femmes, les catégories de poids sont : plus de 72 kg, moins de 72 kg, moins de 66 kg, moins de 61 kg, moins de 56 kg , moins de 52 kg et moins de 48 kg. Chez les hommes, aux jeux Olympiques et au Championnat du monde, les judokas japonais conservent une large supériorité.
+
+Les grades du judo sont divisés en kyu (élèves) et dan (maîtres). Le grade le plus élevé est le 12e dan, attribué uniquement à Jigoro Kano, seul Shihan (docteur). Le plus haut grade suivant est la ceinture rouge attribuée pour leur 10e dan à treize judokas masculins. Les couleurs correspondant aux différents dans sont : du premier au cinquième dan, noire ; du siziéme au huitième, rouge et blanche ; du neuvième au onzième, rouge, et douzième dan, blanche. Les couleurs des grades en kyu sont les suivantes : blanche, 6e kyu (débutant) ; jaune, 5e kyu ; orange, 4e kyu ; verte, 3e kyu ; bleue, 2e kyu ; marron, 1er kyu.
+
+La Fédération française de judo, créée en 1947, regroupe aujourd'hui environ 460 000 licenciés. La France est, après le Japon, l'un des pays du monde où le judo s'est le plus déWêlôppé, et les Français obtiennent de bons résultats dans les compétitions internationales. C'est ainsi qu'Alexandre fut champion olympique en 1988 dans la catégorie des poids légers, et que les Françaises Nowak en super‑légère’s et Fleury en mi-moyennes furent championnes olympiques en 1992. David Douillet fut champion du monde en lourds en 1993. L'équipe de France messieurs remporta la Coupe du monde par équipes, qui a lieu tous les quatre ans, en 1993.</pre>
+							</td>
+                    <td>Martial‑Art’s</td>
+                    <td>2005-09-21 03:19</td>
+                  </tr>
+                  <tr>
+                    <td>Code Nationaux.txt</td>
+                    <td><pre>COUNTRY CODES
+
+AD	Andorra
+AE	United Arab Emirates
+AF	Afghanistan
+AG	Antigua and Barbuda
+AI	Anguilla
+AL	Albania
+AM	Armenia
+AN	Netherlands Antilles
+AO	Angola
+AQ	Antarctica
+AR	Argentina
+AS	American Samoa
+AT	Austria
+AU	Australia
+AW	Aruba
+AZ	Azerbaijan
+BA	Bosnia and Herzegovina
+BB	Barbados
+BD	Bangladesh
+BE	Belgium
+BF	Burkina Faso
+BG	Bulgaria
+BH	Bahrain
+BI	Burundi
+BJ	Benin
+BM	Bermuda
+BN	Brunei Darussalam
+BO	Bolivia
+BR	Brazil
+BS	Bahamas
+BT	Bhutan
+BV	Bouvet Island
+BW	Botswana
+BY	Belarus
+BZ	Belize
+CA	Canada
+CC	Cocos (Keeling) Islands
+CD	Congo, The Democratic Republic of the
+CF	Central African Republic
+CG	Congo
+CH	Switzerland
+CI	Cote D'Ivoire
+CK	Cook Islands
+CL	Chile
+CM	Cameroon
+CN	China
+CO	Colombia
+CR	Costa Rica
+CU	Cuba
+CV	Cape Verde
+CX	Christmas Island
+CY	Cyprus
+CZ	Czech Republic
+DE	Germany
+DJ	Djibouti
+DK	Denmark
+DM	Dominica
+DO	Dominican Republic
+DZ	Algeria
+EC	Ecuador
+EE	Estonia
+EG	Egypt
+EH	Western Sahara
+ER	Eritrea
+ES	Spain
+ET	Ethiopia
+FI	Finland
+FJ	Fiji
+FK	Falkland Islands (Malvinas)
+FM	Micronesia, Federated States of
+FO	Faroe Islands
+FR	France
+FX	France, Metropolitan
+GA	Gabon
+GB	United Kingdom
+GD	Grenada
+GE	Georgia
+GF	French Guiana
+GH	Ghana
+GI	Gibraltar
+GL	Greenland
+GM	Gambia
+GN	Guinea
+GP	Guadeloupe
+GQ	Equatorial Guinea
+GR	Greece
+GS	South Georgia and the South Sandwich Islands
+GT	Guatemala
+GU	Guam
+GW	Guinea-Bissau
+GY	Guyana
+HK	Hong Kong
+HM	Heard and Mc Donald Islands
+HN	Honduras
+HR	Croatia (local name: Hrvatska)
+HT	Haiti
+HU	Hungary
+ID	Indonesia
+IE	Ireland
+IL	Israel
+IN	India
+IO	British Indian Ocean Territory
+IQ	Iraq
+IR	Iran (Islamic Republic of)
+IS	Iceland
+IT	Italy
+JM	Jamaica
+JO	Jordan
+JP	Japan
+KE	Kenya
+KG	Kyrgyzstan
+KH	Cambodia
+KI	Kiribati
+KM	Comoros
+KN	Saint Kitts and Nevis
+KP	Korea, Democratic People's Republic of
+KR	Korea, Republic of
+KW	Kuwait
+KY	Cayman Islands
+KZ	Kazakhstan
+LA	Lao People's Democratic Republic
+LB	Lebanon
+LC	Saint Lucia
+LI	Liechtenstein
+LK	Sri Lanka
+LR	Liberia
+LS	Lesotho
+LT	Lithuania
+LU	Luxembourg
+LV	Latvia
+LY	Libyan Arab Jamahiriya
+MA	Morocco
+MC	Monaco
+MD	Moldova, Republic of
+MG	Madagascar
+MH	Marshall Islands
+MK	Macedonia, The Former Yugoslav republic OF
+ML	Mali
+MM	Myanmar
+MN	Mongolia
+MO	Macau
+MP	Northern Mariana Islands
+MQ	Martinique
+MR	Mauritania
+MS	Montserrat
+MT	Malta
+MU	Mauritius
+MV	Maldives
+MW	Malawi
+MX	Mexico
+MY	Malaysia
+MZ	Mozambique
+NA	Namibia
+NC	New Caledonia
+NE	Niger
+NF	Norfolk Island
+NG	Nigeria
+NI	Nicaragua
+NL	Netherlands
+NO	Norway
+NP	Nepal
+NR	Nauru
+NU	Niue
+NZ	New Zealand
+OM	Oman
+PA	Panama
+PE	Peru
+PF	French Polynesia
+PG	Papua New Guinea
+PH	Philippines
+PK	Pakistan
+PL	Poland
+PM	St. Pierre and Miquelon
+PN	Pitcairn
+PR	Puerto Rico
+PT	Portugal
+PW	Palau
+PY	Paraguay
+QA	Qatar
+RE	Reunion
+RO	Romania
+RU	Russian Federation
+RW	Rwanda
+SA	Saudi Arabia
+SB	Solomon Islands
+SC	Seychelles
+SD	Sudan
+SE	Sweden
+SG	Singapore
+SH	St. Helena
+SI	Slovenia
+SJ	Svalbard and Jan Mayen Islands
+SK	Slovakia (Slovak Republic)
+SL	Sierra Leone
+SM	San Marino
+SN	Senegal
+SO	Somalia
+SR	Suriname
+ST	Sao Tome and Principe
+SV	El Salvador
+SY	Syrian Arab Republic
+SZ	Swaziland
+TC	Turks and Caicos Islands
+TD	Chad
+TF	French Southern Territories
+TG	Togo
+TH	Thailand
+TJ	Tajikistan
+TK	Tokelau
+TM	Turkmenistan
+TN	Tunisia
+TO	Tonga
+TP	East Timor
+TR	Turkey
+TT	Trinidad and Tobago
+TV	Tuvalu
+TW	Taiwan, Province of China
+TZ	Tanzania, United Republic of
+UA	Ukraine
+UG	Uganda
+UM	United States Minor Outlying Islands
+US	United States
+UY	Uruguay
+UZ	Uzbekistan
+VA	Holy See (Vatican City State)
+VC	Saint Vincent and The Grenadines
+VE	Venezuela
+VG	Virgin Islands (British)
+VI	Virgin Islands (US)
+VN	Viet Nam
+VU	Vanuatu
+WF	Wallis and Futuna Islands
+WS	Samoa
+YE	Yemen
+YT	Mayotte
+YU	Yugoslavia
+ZA	South Africa
+ZM	Zambia
+ZW	Zimbabwe</pre>
+							</td>
+                    <td>Code</td>
+                    <td>2005-08-26 02:03</td>
+                  </tr>
+                  <tr>
+                    <td>Région DVD.txt</td>
+                    <td>
+				  <pre>Région 1 : Amérique du Nord
+Région 2 : Europe &amp; Moyen-Orient
+Région 3 : Grand Orient &amp; Asie
+Région 4 : Amérique du Sud &amp; Océanie
+Région 5 : Russie &amp; Inde &amp; Afrique
+Région 6 : Chine</pre>
+							</td>
+                    <td>Techno‑logie’s</td>
+                    <td>2005-05-07 15:09</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+            </fieldset>
+          </section>
+          <!-- END SECTION TEXT HISTORY REGISTER -->
+        <!-- END SECTION PRINCIPAL --> </article>
+    </main>
+    <footer id="footer">
+      <!-- Prism -->
+      <script src="../../../public/assets/js/prism/prism.js"></script>
+      <!-- Prettify -->
+      <script src="../../../public/assets/js/prettify/prettify.js"></script>
+      <!-- TocBot-->
+      <script src="../../../public/assets/js/tocbot/tocbot.js"></script>
+      <script src="../../../public/assets/js/tocbot/tocbot.init.js"></script>
+      <!-- Semantic UI -->
+      <script src="../../../public/assets/PrameVorgs/semantic-ui-css-master/semantic.min.js"></script>
+      <!-- DataTables -->
+      <script src="../../../public/assets/js/data_tables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+      <script src="../../../public/assets/js/data_tables/DataTables-1.10.18/js/dataTables.semanticui.min.js"></script>
+      <!-- DataTables Personal -->
+      <script src="../../../public/assets/js/Nemzag/data_tables-nemzag.js"></script>
+      <!-- Personal -->
+      <script src="../../../public/assets/js/Nemzag/functions/Nemzag_-_smoothscroll_titles_t.o.c._-_2018-10-01.js"></script> </footer>
+  </body>
+</html>
